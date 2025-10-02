@@ -1,0 +1,663 @@
+Using pre-set license
+Built from '6000.1/staging' branch; Version is '6000.1.11f1 (9b156bbbd4df) revision 10163563'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32605 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+Date: 2025-10-02T12:31:03Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\6000.1.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+52870
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project
+C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13160]  Target information:
+
+Player connection [13160]  * "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 865474367 [EditorId] 865474367 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICHEMF8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [13160] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13160] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.1.11f1 (9b156bbbd4df)
+[Subsystems] Discovering subsystems at path C:/Program Files/6000.1.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:          NVIDIA
+    VRAM:            7957 MB
+    App VRAM Budget: 7189 MB
+    Driver:          32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/6000.1.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/6000.1.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/6000.1.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56988
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/6000.1.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/6000.1.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001861 seconds.
+- Loaded All Assemblies, in  0.421 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.353 seconds
+Domain Reload Profiling: 772ms
+	BeginReloadAssembly (143ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (177ms)
+		LoadAssemblies (141ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (150ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (353ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (315ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (56ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (130ms)
+			ProcessInitializeOnLoadMethodAttributes (54ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.714 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.616 seconds
+Domain Reload Profiling: 2328ms
+	BeginReloadAssembly (183ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (443ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (211ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (155ms)
+			BuildScriptInfoCaches (34ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1617ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1509ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (1379ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 53 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4020 unused Assets / (3.0 MB). Loaded Objects now: 4532.
+Memory consumption went from 103.5 MB to 100.5 MB.
+Total: 6.108400 ms (FindLiveObjects: 0.734300 ms CreateObjectMapping: 0.269800 ms MarkObjects: 3.943100 ms  DeleteObjects: 1.160000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 699370.336368 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials
+  artifactKey: Guid(a51562e34b2fbe94fae9830dd5ffd3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials using Guid(a51562e34b2fbe94fae9830dd5ffd3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd898f6ba17dac2fce348bc73c28bdab2') in 0.0077233 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.121060 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_01a.mat
+  artifactKey: Guid(236c9bd5bd743f04bb391138e5e758da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_01a.mat using Guid(236c9bd5bd743f04bb391138e5e758da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61dde46a0899bcc55afba1475ee5e3f6') in 0.2795984 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_metal_02.mat
+  artifactKey: Guid(6e77f423df70a16468b56e4627f5832d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_metal_02.mat using Guid(6e77f423df70a16468b56e4627f5832d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3260f35067848f0383c573f81d1fc348') in 0.0954441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_trim_01.mat
+  artifactKey: Guid(08ebc637963745444bf1dac7cbf53e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_trim_01.mat using Guid(08ebc637963745444bf1dac7cbf53e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38d45c0f8ae94e38f44352bf39967b1a') in 0.0811401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_ceilingpanel_01.mat
+  artifactKey: Guid(d3b18be6ed6c5fa4d9e133520841bc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_ceilingpanel_01.mat using Guid(d3b18be6ed6c5fa4d9e133520841bc34) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4a7ae17abb9b1820271a71000ca70d4') in 0.0926023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MM_scrolling_marquee_01.mat
+  artifactKey: Guid(181c5c3eb9b308a4f93bec6030f64ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MM_scrolling_marquee_01.mat using Guid(181c5c3eb9b308a4f93bec6030f64ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '045ad99424887d372b68e8bf0d56bc9b') in 0.2350867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_metalpole_01.mat
+  artifactKey: Guid(f211375941a85f94bb8eac28a6230316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_metalpole_01.mat using Guid(f211375941a85f94bb8eac28a6230316) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17a32adccf6be7b44d525df6e6892d40') in 0.1351475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_02b.mat
+  artifactKey: Guid(058e51afbac66e44faa7f9b52c618b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_02b.mat using Guid(058e51afbac66e44faa7f9b52c618b6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c8c384966d4f9a64e35b7fe43a8f6ac') in 0.0691718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_griptape_02.mat
+  artifactKey: Guid(30c03b3cad1d6c54096161524b01c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_griptape_02.mat using Guid(30c03b3cad1d6c54096161524b01c683) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28c9e5e29f538b3c0196943e7ba0c68b') in 0.0601072 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_exterior_trims_01.mat
+  artifactKey: Guid(a3f2355fbe5af3b46a279d76f19d07be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_exterior_trims_01.mat using Guid(a3f2355fbe5af3b46a279d76f19d07be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62138d25789100b8a927d013b0940060') in 0.0553703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_02a.mat
+  artifactKey: Guid(adce4c71205e8f146affa90ae1c266dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_ads_02a.mat using Guid(adce4c71205e8f146affa90ae1c266dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73116a1ef80b19c0c59456f8c73d1c8c') in 0.078144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_trash_01.mat
+  artifactKey: Guid(cdde83dbc42b5ee46989d82442d29be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_trash_01.mat using Guid(cdde83dbc42b5ee46989d82442d29be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48c817f647e909475937dc7348dca28e') in 0.0820483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_vents_01.mat
+  artifactKey: Guid(1b4971f0942f64645ab38670a55e237f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_vents_01.mat using Guid(1b4971f0942f64645ab38670a55e237f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ccd0ed1198cc4c6a8aef463ccd168b9d') in 0.0634827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_wallattachments_01.mat
+  artifactKey: Guid(667082cd88f70b94097b15e29a0ed815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_wallattachments_01.mat using Guid(667082cd88f70b94097b15e29a0ed815) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bac1b909b971e515086682c264a7bfdc') in 0.0721121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.206995 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models
+  artifactKey: Guid(68b4ff2144ca2354ab009fc3c610bbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models using Guid(68b4ff2144ca2354ab009fc3c610bbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd115c5fac852b793b25a8c7b51f3114c') in 0.0008166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052464 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_chair_01b.fbx
+  artifactKey: Guid(dee75e6d7808e6944a902e7be512ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_chair_01b.fbx using Guid(dee75e6d7808e6944a902e7be512ba70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe059ba9e044e5b3bce39638273a10b9') in 0.3873172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_150_01.fbx
+  artifactKey: Guid(243b6247551a88946812f82f23b19c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_150_01.fbx using Guid(243b6247551a88946812f82f23b19c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b06ebc78ce6db162a6c93bd4a786707d') in 0.2481478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_trash_paper_01.fbx
+  artifactKey: Guid(6591a038e4eb7dc4b91a4841313fb536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_trash_paper_01.fbx using Guid(6591a038e4eb7dc4b91a4841313fb536) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a47ad5b939864c61fb456a53125761bd') in 0.1838731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_door_wall_02.fbx
+  artifactKey: Guid(79e9617dfcd343d448dbdc8f65ce1c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_door_wall_02.fbx using Guid(79e9617dfcd343d448dbdc8f65ce1c84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5242470939ea78265e46261ca5ceb58') in 0.2423015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 40
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_box_01.fbx
+  artifactKey: Guid(36cb1418798e82940b4425648efa4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_box_01.fbx using Guid(36cb1418798e82940b4425648efa4bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8b1677d72eec6fcbd12fa71e3e36972') in 0.1690026 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_ext_doorchains_01.fbx
+  artifactKey: Guid(71eafce695f01dc41bafa3ed966c54f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_ext_doorchains_01.fbx using Guid(71eafce695f01dc41bafa3ed966c54f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a796d92df48404ea382b18cfb5904dbe') in 0.1579066 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_ext_endwall_lights_01.fbx
+  artifactKey: Guid(09b06c9a6a8054948b043a3365b79420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_ext_endwall_lights_01.fbx using Guid(09b06c9a6a8054948b043a3365b79420) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4b50290a78ba2219d13a5ee4c92d46b') in 0.259075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_ext_roof_200_01.fbx
+  artifactKey: Guid(3b1794e8cf629054fb2c6b9f0f4fe959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_ext_roof_200_01.fbx using Guid(3b1794e8cf629054fb2c6b9f0f4fe959) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0cdcc0c7d9f448fa913a4a7f5fdcb6b') in 0.1653923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_01.fbx
+  artifactKey: Guid(bce4bf004bf1e1d4097bf2a09048c746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_01.fbx using Guid(bce4bf004bf1e1d4097bf2a09048c746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3955b2ba19695f1a19ec94d007e929ce') in 0.2090831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_02.fbx
+  artifactKey: Guid(510bdd2b526b15e4cb198994e3728f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_02.fbx using Guid(510bdd2b526b15e4cb198994e3728f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eba59fbc5f316ab24fc8a8d9695d2dd5') in 0.167857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_wall_doorway_01.fbx
+  artifactKey: Guid(1328a2e7196a54141b34fa86fd103036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_wall_doorway_01.fbx using Guid(1328a2e7196a54141b34fa86fd103036) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8dd53f5e9a71f636fa4e2a6b7ebcdfb') in 0.2167107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_window_interior_marquee_01.fbx
+  artifactKey: Guid(343b94ce16d5ec3409153b9e6cb4a6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_window_interior_marquee_01.fbx using Guid(343b94ce16d5ec3409153b9e6cb4a6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cff2cdfc61ec9918181c484179db6436') in 0.3062508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_ebreak_01.fbx
+  artifactKey: Guid(0d5debdcf2cd0b140a23e375b2cbd56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_ebreak_01.fbx using Guid(0d5debdcf2cd0b140a23e375b2cbd56f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '971077132daff21da7eb077e92c89c44') in 0.210878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 33
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_bar_01.fbx
+  artifactKey: Guid(70ee9c0b7907c2f448d2474bb14ad01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_underbody_bar_01.fbx using Guid(70ee9c0b7907c2f448d2474bb14ad01b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ceba827fd49f0f7c88ffedfb4afc59b6') in 0.1887975 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_ext_wall_50_01.fbx
+  artifactKey: Guid(982f4a2bf7a92d644bd553330b70b481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_ext_wall_50_01.fbx using Guid(982f4a2bf7a92d644bd553330b70b481) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6ca779b4f3bdb2f4c9cb3f0a2212051') in 0.2073991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_endcorner_02.fbx
+  artifactKey: Guid(13cebf221516ef343bc2ecec31f6fffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_endcorner_02.fbx using Guid(13cebf221516ef343bc2ecec31f6fffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e76036b5147f701ee632cc3f0a197422') in 0.2406182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_02.fbx
+  artifactKey: Guid(1037e75be73008343942de39650f6d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_02.fbx using Guid(1037e75be73008343942de39650f6d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0120cdd511c4cccc45a500a32a7bd62d') in 0.2363528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 39
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_03.fbx
+  artifactKey: Guid(65db05fa5b40e254181f6a8c7c2b8b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_wallposter_03.fbx using Guid(65db05fa5b40e254181f6a8c7c2b8b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f9d967d2598a16fd6f36b37c76afcb3') in 0.2034256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_cornerunit_01.fbx
+  artifactKey: Guid(54671f4b11c43a1459258b2382a5781f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_int_wall_cornerunit_01.fbx using Guid(54671f4b11c43a1459258b2382a5781f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e306d757cc8c6b7f7ca937b73f7c594') in 0.212668 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Models/SM_overheadlight_01.fbx
+  artifactKey: Guid(47b10db8e74cf724eae33c2b563a2eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Models/SM_overheadlight_01.fbx using Guid(47b10db8e74cf724eae33c2b563a2eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7b78ccd51e59b423b6c7ac22c829d23') in 0.1841151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.214860 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_woodenpanel_ALB.TGA
+  artifactKey: Guid(ee471e8c5d2e28a4c8e179824eb33d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_woodenpanel_ALB.TGA using Guid(ee471e8c5d2e28a4c8e179824eb33d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c70cfbae76d02291b67d19eb427512e') in 0.0341718 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.993729 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_wallattachments_01_ALB.TGA
+  artifactKey: Guid(f3d15dd52d2190d4e81d55cc93473921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_wallattachments_01_ALB.TGA using Guid(f3d15dd52d2190d4e81d55cc93473921) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3921cd9aaac000986a65e4bdf5bdd42b') in 0.0258038 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.604224 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_wallpanel_01_RMA.TGA
+  artifactKey: Guid(a7224fc34eafa6247b949b48b6aa5e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_wallpanel_01_RMA.TGA using Guid(a7224fc34eafa6247b949b48b6aa5e65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a98c0267cb14c6d2facf73daabe6ad11') in 0.0222743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.032544 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_01d_ALB.tga
+  artifactKey: Guid(39f74a5a6494af34da4f5ccd530cb3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_01d_ALB.tga using Guid(39f74a5a6494af34da4f5ccd530cb3a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '384f494cdf036f9149b365e6463ad02b') in 0.0347989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.391324 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_02a_ALB.tga
+  artifactKey: Guid(be5eab9e79561fe48a70aef4cf92df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_02a_ALB.tga using Guid(be5eab9e79561fe48a70aef4cf92df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '023fc4bd1971980f57e15cd8a5cbe722') in 0.0243458 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.382578 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_02b_ALB.tga
+  artifactKey: Guid(97790dbe3c60a454aa764ad35a949037) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_02b_ALB.tga using Guid(97790dbe3c60a454aa764ad35a949037) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cab8dc850235ff802ed8f25d13e33046') in 0.027395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.052106 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03a_ALB.tga
+  artifactKey: Guid(f9856292d513fd049b0d9db596ee952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03a_ALB.tga using Guid(f9856292d513fd049b0d9db596ee952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bba7df138c5fb144895995a9219d1da5') in 0.0222115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.264836 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03b_ALB.tga
+  artifactKey: Guid(ac31b181b098fe749b9b4aa2b37052cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03b_ALB.tga using Guid(ac31b181b098fe749b9b4aa2b37052cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1a23e315d04b4ee82bcabf2a3709a59') in 0.0266956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.408223 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03c_ALB.tga
+  artifactKey: Guid(d215b729add81bf46ab3d201a068f7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03c_ALB.tga using Guid(d215b729add81bf46ab3d201a068f7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c3a2d80a1e5f4494874a9813b319a5e') in 0.0203461 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.368659 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03d_ALB.tga
+  artifactKey: Guid(739799b56c7ea6b43a86e5e33b029701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ads_03d_ALB.tga using Guid(739799b56c7ea6b43a86e5e33b029701) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '138f2fd8cb252adb27f411f1db7b3c26') in 0.0221423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.254854 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_bogie_ALB.TGA
+  artifactKey: Guid(5f9c0a59e312f7d4480dde4d34e51d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_bogie_ALB.TGA using Guid(5f9c0a59e312f7d4480dde4d34e51d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6878a759d59b2cdf86c3b63e2cf55335') in 0.039857 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.257286 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_ceilingpanel_01_ALB.TGA
+  artifactKey: Guid(d3849908fff8baf4484b852b14af1627) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_ceilingpanel_01_ALB.TGA using Guid(d3849908fff8baf4484b852b14af1627) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b6b3135210b15a935822012ad0cd3a46') in 0.0252855 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.884658 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_chair_01_ALB.TGA
+  artifactKey: Guid(878d363d7611dbe4d8e3a936c956558d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_chair_01_ALB.TGA using Guid(878d363d7611dbe4d8e3a936c956558d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '621895e45f032f0df568cb533288a6f3') in 0.03325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.820535 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ext_part_ALB.TGA
+  artifactKey: Guid(f4ca363a3970f1943ac0fc70645b3ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_ext_part_ALB.TGA using Guid(f4ca363a3970f1943ac0fc70645b3ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97f16af61ee73e0995c76507aaa14875') in 0.0280324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.381860 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metal_dull_01_ALB.TGA
+  artifactKey: Guid(29b0fe1ae73534340913bb4f1c637a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metal_dull_01_ALB.TGA using Guid(29b0fe1ae73534340913bb4f1c637a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd82a02816015b8f1ee16e5caeeff13f') in 0.0321455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.562879 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metaltrim_ALB.TGA
+  artifactKey: Guid(4e081caaf5e125d43963e8c7c7df6f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metaltrim_ALB.TGA using Guid(4e081caaf5e125d43963e8c7c7df6f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26210bf1fc1274d249581a72bf5375d4') in 0.0325848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.686728 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_papers_01_ALB.TGA
+  artifactKey: Guid(a70f5e3e21c8cf2439eebe182bb33f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_papers_01_ALB.TGA using Guid(a70f5e3e21c8cf2439eebe182bb33f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bcf1541ba3e4931406dd69c6faf1c1b') in 0.0397359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.371522 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Shared/TX_trash_01_ALB.TGA
+  artifactKey: Guid(77cae66b0f062e446984d52fe6720ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Shared/TX_trash_01_ALB.TGA using Guid(77cae66b0f062e446984d52fe6720ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a015966434e9bcb4c42778de44ef228e') in 0.0263303 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.118371 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_wallpanel_01_NRM.TGA
+  artifactKey: Guid(252db3b823a16fc45892f39a258caeae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_wallpanel_01_NRM.TGA using Guid(252db3b823a16fc45892f39a258caeae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbbf2c8c4292d9ac127b553ab5b84c4a') in 0.0505652 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.309226 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_overheadlight_ALB.TGA
+  artifactKey: Guid(c556f870eefb832478bbd41f06751412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_overheadlight_ALB.TGA using Guid(c556f870eefb832478bbd41f06751412) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90179e16c55928f7da17e8c27ee0142a') in 0.0282044 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_overheadlight_NRM.TGA
+  artifactKey: Guid(ab8919d9a48a3384a8c4991be0106583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Unique/TX_overheadlight_NRM.TGA using Guid(ab8919d9a48a3384a8c4991be0106583) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d4550e95ce8ccf756433dc7b0bb930c') in 0.0475533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.995797 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metal_02_ALB.TGA
+  artifactKey: Guid(5bbc5503d1462404fa06b133ace78bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Tiling/TX_metal_02_ALB.TGA using Guid(5bbc5503d1462404fa06b133ace78bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c388d3f5c585e77f6bf659f13d0b4008') in 0.0461076 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 65.285982 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_bogie_01.mat
+  artifactKey: Guid(cf7fdda7d2c95a44593994d9c5bde989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_bogie_01.mat using Guid(cf7fdda7d2c95a44593994d9c5bde989) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e195e23046aa6ea1420560d1a7a9274') in 0.0765054 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_floor_02.mat
+  artifactKey: Guid(e0ed913b5a26ee6438931ab9054d0feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_floor_02.mat using Guid(e0ed913b5a26ee6438931ab9054d0feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a1eeaeae141bd57742f12e452a59e66') in 0.0656638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
