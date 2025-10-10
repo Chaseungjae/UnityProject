@@ -1,0 +1,383 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.56f1 (9c7b5e468860) revision 10255198'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32605 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-10-10T13:48:24Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\6000.0.56f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project (1)
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+64688
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project (1)
+C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project (1)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21372]  Target information:
+
+Player connection [21372]  * "[IP] 192.168.0.238 [Port] 0 [Flags] 2 [Guid] 2320560230 [EditorId] 2320560230 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ICHEMF8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [21372] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21372] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.56f1 (9c7b5e468860)
+[Subsystems] Discovering subsystems at path C:/Program Files/6000.0.56f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Chaseungjae/Desktop/Unity3DPJ/UnityProject/My project (1)/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/6000.0.56f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/6000.0.56f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/6000.0.56f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/6000.0.56f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005198 seconds.
+- Loaded All Assemblies, in  0.482 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.410 seconds
+Domain Reload Profiling: 890ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (151ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (176ms)
+			TypeCache.Refresh (172ms)
+				TypeCache.ScanAssembly (159ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (411ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (364ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (205ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.818 seconds
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.967 seconds
+Domain Reload Profiling: 2782ms
+	BeginReloadAssembly (251ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (443ms)
+		LoadAssemblies (406ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (130ms)
+			BuildScriptInfoCaches (27ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1968ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1865ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (1749ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3934 unused Assets / (0.8 MB). Loaded Objects now: 4428.
+Memory consumption went from 85.3 MB to 84.4 MB.
+Total: 6.823400 ms (FindLiveObjects: 0.585200 ms CreateObjectMapping: 0.535400 ms MarkObjects: 4.637400 ms  DeleteObjects: 1.064300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1395247.140335 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Skybox.mat
+  artifactKey: Guid(2a41081926314fb44b0d44bb5d945532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Skybox.mat using Guid(2a41081926314fb44b0d44bb5d945532) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '142a05057a6969e51e9eb5a9c05b5bd0') in 0.3721951 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/TrashCan_Mat.mat
+  artifactKey: Guid(c73caa0421bcc114e9dbd298a4e2d647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/TrashCan_Mat.mat using Guid(c73caa0421bcc114e9dbd298a4e2d647) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3afba427e5fd15a0cab5beb307f43f5f') in 0.0559201 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainSigns_Mat.mat
+  artifactKey: Guid(9d93b66bf29f81746aa48b0b2e0cd2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainSigns_Mat.mat using Guid(9d93b66bf29f81746aa48b0b2e0cd2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f26f6424bfc363878ff7572b11ce7af6') in 0.0946823 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainSeats_Mat.mat
+  artifactKey: Guid(ba3d2bb2a6adb024e86394cbee89f696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainSeats_Mat.mat using Guid(ba3d2bb2a6adb024e86394cbee89f696) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52566d3cfbec76448a2b8c7240a9d6e1') in 0.060189 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainGlasses_Mat.mat
+  artifactKey: Guid(ad50ef903a2c8754c9c087116562e2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainGlasses_Mat.mat using Guid(ad50ef903a2c8754c9c087116562e2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2e195c28b22632bf38df22ff6cc194a') in 0.0081943 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_decal_ext_flag_01_ALB.mat
+  artifactKey: Guid(38af0ce454ad03c4cac8d058ea9f22c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_decal_ext_flag_01_ALB.mat using Guid(38af0ce454ad03c4cac8d058ea9f22c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b063ee8f4743ad0500f2dfd19b812f0') in 0.126564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.123677 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_donotholddoors_ALB.mat
+  artifactKey: Guid(9e9b75efdcd1b7647b1b812b43b2e5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_donotholddoors_ALB.mat using Guid(9e9b75efdcd1b7647b1b812b43b2e5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c2b80c1027721e35bbbee1c904f10e36') in 0.0200416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_inmetrostation_ALB.mat
+  artifactKey: Guid(fdc951d8f05220643b85a75381bdba24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_inmetrostation_ALB.mat using Guid(fdc951d8f05220643b85a75381bdba24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3cbbfd1baeff21f7693659756dfc06e7') in 0.0193865 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_07_ALB.mat
+  artifactKey: Guid(e1bb0548377955d47b971f37196411fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_07_ALB.mat using Guid(e1bb0548377955d47b971f37196411fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a20108559c0760bce8b379a1c1d48943') in 0.027096 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_04_ALB.mat
+  artifactKey: Guid(423134661fca96a44ae2b6d7cc94be58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_04_ALB.mat using Guid(423134661fca96a44ae2b6d7cc94be58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eafdc02936d5200776228153f72759fd') in 0.0357424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_05_ALB.mat
+  artifactKey: Guid(74a23b23bee55a84fa718fe883a7091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_grad_05_ALB.mat using Guid(74a23b23bee55a84fa718fe883a7091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45760c804c97e8a5a48abc8ba943b8b3') in 0.2114005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.164514 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_nopriority_ALB.mat
+  artifactKey: Guid(4f2a4a12fa7e43a4cadd87d0e50a5406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_nopriority_ALB.mat using Guid(4f2a4a12fa7e43a4cadd87d0e50a5406) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bae844e6f608512547f4aeb9216a7c2e') in 0.0206281 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/EnvironmentProps_Materials/WoodenBox_Mat.mat
+  artifactKey: Guid(983326b968c695345a9e285dc990dd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/EnvironmentProps_Materials/WoodenBox_Mat.mat using Guid(983326b968c695345a9e285dc990dd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd6005dfe03aa004813a782724967f9a') in 0.0229015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_sticker_03_ALB.mat
+  artifactKey: Guid(3466cbf1068925947a6a0ed5f9fcee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Subway Full Package/SubwayTrain/Textures/Decals/Materials/TX_sticker_03_ALB.mat using Guid(3466cbf1068925947a6a0ed5f9fcee14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cc308b7696fd46dd642ee06062358a1') in 0.0404113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_Tunnel_Mat.mat
+  artifactKey: Guid(f2a67acc5ad76414c91e528ec4e54fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_Tunnel_Mat.mat using Guid(f2a67acc5ad76414c91e528ec4e54fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a98ee0846bed3ce5eb2ea58960ca7e48') in 0.0501498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.808070 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/EnvironmentProps_Materials/PlasticCan_Mat.mat
+  artifactKey: Guid(80fe5282b724d9d4a916cebb40ee9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/EnvironmentProps_Materials/PlasticCan_Mat.mat using Guid(80fe5282b724d9d4a916cebb40ee9996) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e25bf7825ac81eb5e764a8b3d0fdb6ba') in 0.1202289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_Station_Mat.mat
+  artifactKey: Guid(7e65d1087f0444e48a659ecfadae5a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_Station_Mat.mat using Guid(7e65d1087f0444e48a659ecfadae5a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0155f0584aaca0319cba06675ae0f5fc') in 0.1028192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/SubwayEntrance_Fences_Mat.mat
+  artifactKey: Guid(64fcfab9df6fc644ca638a6a2ce34c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/SubwayEntrance_Fences_Mat.mat using Guid(64fcfab9df6fc644ca638a6a2ce34c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97c11e2263683a13e3c6dd118f271142') in 0.1416002 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainDoor_Mat.mat
+  artifactKey: Guid(c20f4d68691df264098efdc2ed37a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Train_Materials/TrainDoor_Mat.mat using Guid(c20f4d68691df264098efdc2ed37a886) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ca5420218b5540671592cc26d3b36cc5') in 0.0717931 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/TicketRoom_Mat.mat
+  artifactKey: Guid(cf562d05501d7c14f8903fd49a71dd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/TicketRoom_Mat.mat using Guid(cf562d05501d7c14f8903fd49a71dd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '632cee0bd59f0639ee0b7c1972240537') in 0.0820582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/VFX/Materials/WaterDrip_Particle_Mat.mat
+  artifactKey: Guid(8ddda8f808479d4429bbc3ce8bf100cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/VFX/Materials/WaterDrip_Particle_Mat.mat using Guid(8ddda8f808479d4429bbc3ce8bf100cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7b19694c412dad6365a767989124537') in 0.2060272 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Tunnel_End_Mat.mat
+  artifactKey: Guid(54c269ed34ad95b43bf77101308aff87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Tunnel_End_Mat.mat using Guid(54c269ed34ad95b43bf77101308aff87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eff612c103cee03e13b99a9acc3fb95d') in 0.227567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Tunnel_Lighted_Mat.mat
+  artifactKey: Guid(e34211b4c5d92a44fa2249b7d3b3fce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Tunnel_Lighted_Mat.mat using Guid(e34211b4c5d92a44fa2249b7d3b3fce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9519ea009b6c70c3e69b95f7ba6679a1') in 0.1223467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_DoorIntoRoom_Mat.mat
+  artifactKey: Guid(48f64b29cb6d68042a38dd9aa4f8a673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Wall_DoorIntoRoom_Mat.mat using Guid(48f64b29cb6d68042a38dd9aa4f8a673) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdc65808bf8743dda4d32af33cecad44') in 0.0828433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+

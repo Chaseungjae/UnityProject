@@ -26,7 +26,7 @@ public class BackgroundMove : MonoBehaviour
     private bool is_door_closing = false; //문 닫힘 끝났는지 
 
     //타이머 
-    private float move_timer = 10.0f; //터널 반복 시간
+    private float move_timer = 300.0f; //터널 반복 시간
     private float stop_timer = 12.0f; //역 정차 시간 +2초 해줘야함 
     void Start()
     {
