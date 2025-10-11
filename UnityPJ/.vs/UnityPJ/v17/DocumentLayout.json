@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\mycustomcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mycustomcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,24 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyCustomCamera.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MyCustomCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MyCustomCamera.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MyCustomCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MyCustomCamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T13:19:08.189Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBsAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:57:44.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BackgroundMove.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroundMove.cs",
               "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\BackgroundMove.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAwBwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvxwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T14:43:27.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-10-10T14:43:27.653Z"
             }
           ]
         }

@@ -22,11 +22,11 @@ public class BackgroundMove : MonoBehaviour
     public float door_open_pos = 0.7f; // 문 열림 포지션 차이 
     private Vector3[] left_door_closed_pos;  // 왼쪽 문들의 닫힌 위치 저장
     private Vector3[] right_door_closed_pos; // 오른쪽 문들의 닫힌 위치 저장
-    private bool is_door_open = false; //문 열림 닫힘 상태 저장
-    private bool is_door_closing = false; //문 닫힘 끝났는지 
+    public bool is_door_open = false; //문 열림 닫힘 상태 저장
+    public bool is_door_closing = false; //문 닫힘 끝났는지 
 
     //타이머 
-    private float move_timer = 300.0f; //터널 반복 시간
+    private float move_timer = 10.0f; //터널 반복 시간
     private float stop_timer = 12.0f; //역 정차 시간 +2초 해줘야함 
     void Start()
     {
