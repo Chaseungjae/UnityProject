@@ -7,13 +7,20 @@ using UnityEngine.UIElements;
 
 public class BackgroundMove : MonoBehaviour
 {
-    public float background_move_speed=5.0f; //벽 최대 움직임 속도
+    public float max_speed = 5.0f; // 지하철의 최대 속도
+    public float acceleration_time = 1.5f; // 최대 속도까지 도달하는 데 걸리는 시간 (초)
+    public float deceleration_time = 1.0f; // 멈추는 데 걸리는 시간 (초)
+
+    private float current_speed = 0.0f; // 현재 속도
+    private float target_speed = 0.0f;  // 목표 속도
+    private float velocity = 0.0f;
 
     public GameObject tunnel; // 반복 터널 게임 오브젝트 
     private float tunnel_check_pos = 60.0f; // 터널 반복 구간 
     private float tunnel_reset_pos = 95.0f; //터널 처음 포지션 
     private float start_tunnel_posx = -70.0f; //역 출발 후 터널 구간 반복 시작 포지션
     private float end_pos = -140.0f; //역 도착 포지션 
+    private bool is_end=false; //도착하고 다시 출발하기 위한 끝까지 갔는지에대한 
 
     //문열림 조작 
     public GameObject[] door_left; // 문 배열 
@@ -23,13 +30,16 @@ public class BackgroundMove : MonoBehaviour
     private Vector3[] left_door_closed_pos;  // 왼쪽 문들의 닫힌 위치 저장
     private Vector3[] right_door_closed_pos; // 오른쪽 문들의 닫힌 위치 저장
     public bool is_door_open = false; //문 열림 닫힘 상태 저장
-    public bool is_door_closing = false; //문 닫힘 끝났는지 
+    public bool is_door_closing = true; //문 닫힘 끝났는지 
 
     //타이머 
     private float move_timer = 10.0f; //터널 반복 시간
     private float stop_timer = 12.0f; //역 정차 시간 +2초 해줘야함 
     void Start()
     {
+        //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
+        target_speed = max_speed;
+
         left_door_closed_pos = new Vector3[door_left.Length];
         for (int i = 0; i < door_left.Length; i++)
         {
@@ -46,41 +56,74 @@ public class BackgroundMove : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x <= start_tunnel_posx && move_timer>0.0f) { // 터널 구간 반복 여기서 무브 타이머 if문으로 소리 방송 구현 하면 될듯 
-            move_timer-=Time.deltaTime;
-            tunnel.transform.Translate(Vector3.left * background_move_speed * Time.deltaTime);
-            if(tunnel.transform.position.x <= tunnel_check_pos) {
-                tunnel.transform.position = new Vector3(tunnel_reset_pos, 0, 0);}
-        }
-
-        else if (end_pos < transform.position.x) // 시작하고 터널/ 터널에서 엔드포지션전까지 
+        //멈출때 속도 줄이는 부분
+        if (!is_end&&transform.position.x < end_pos+10.0f) { target_speed = 0f; }
+        // 현재 속도가 목표 속도와 다른지 확인
+        if (!Mathf.Approximately(current_speed, target_speed))
         {
-            transform.Translate(Vector3.right * -background_move_speed * Time.deltaTime);
+            float smooth_time = (target_speed > 0) ? acceleration_time : deceleration_time;
+            current_speed = Mathf.SmoothDamp(
+                current_speed,     // 현재 값
+                target_speed,      // 목표 값
+                ref velocity,     // 현재 속도 (참조로 전달)
+                smooth_time        // 목표 도달까지 걸리는 시간
+            );
         }
-
-        else //멈추고 타이머 후 움직임 문 열림 닫힘 구현 
+        // 이동 중 상태 처리 (속도가 0보다 클 때)
+        if (current_speed > 0.001f) // 속도가 0이 아니면 무조건 이동 중
         {
-            stop_timer-=Time.deltaTime;
-            if (stop_timer > 0.0f && !is_door_open&&!is_door_closing)
+            // 터널 구간인지, 일반 구간인지에 따라 누가 움직일지 결정
+            if (transform.position.x <= start_tunnel_posx && move_timer > 0.0f)
             {
-                is_door_open = true;
-                print("open");
-                StartCoroutine(AnimateDoorsCoroutine(true)); //문열림 코루틴 시작
+                // 터널 구간: 터널을 움직임
+                move_timer -= Time.deltaTime;
+                tunnel.transform.Translate(Vector3.left * current_speed * Time.deltaTime);
+                if (tunnel.transform.position.x <= tunnel_check_pos)
+                {
+                    tunnel.transform.position = new Vector3(tunnel_reset_pos, 0, 0);
+                }
             }
-            else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
+            else
             {
-                print("close");
-                is_door_closing = true; 
-                is_door_open = false;
-                StartCoroutine(AnimateDoorsCoroutine(false)); //문닫힘 코루틴 시작
+                // 일반 구간 배경(자신)을 움직임
+                transform.Translate(Vector3.right * -current_speed * Time.deltaTime);
             }
-            if (stop_timer < 0.0f)
+        }
+        // 정지 상태 처리 (속도가 0일 때)
+        else
+        {
+            // 속도가 0일 때, 우리가 멈춘 것인지(target_speed == 0) 확인
+            // (게임 시작 시 speed 0 상태와 구분하기 위함)
+            if (target_speed == 0f)
             {
-                transform.Translate(Vector3.right * -background_move_speed * Time.deltaTime);
+                stop_timer -= Time.deltaTime;
+                if (stop_timer > 0.0f && !is_door_open && !is_door_closing)
+                {
+                    is_door_open = true;
+                    is_door_closing = false;
+                    print("open");
+                    StartCoroutine(AnimateDoorsCoroutine(true)); //문열림 코루틴 시작
+                }
+                else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
+                {
+                    print("close");
+                    is_door_closing = true;
+                    is_door_open = false;
+                    StartCoroutine(AnimateDoorsCoroutine(false)); //문닫힘 코루틴 시작
+                }
+
+                // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때)
+                if (stop_timer < 0.0f && is_door_closing)
+                {
+                    print("dd");
+                    is_end=true; 
+                    target_speed = max_speed;
+                }
             }
         }
     }
 
+    //문열림 함수
     IEnumerator AnimateDoorsCoroutine(bool open)
     {
         float elapsedTime = 0f;
