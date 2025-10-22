@@ -35,6 +35,10 @@ public class BackgroundMove : MonoBehaviour
     //타이머 
     private float move_timer = 10.0f; //터널 반복 시간
     private float stop_timer = 12.0f; //역 정차 시간 +2초 해줘야함 
+
+    //지하철 다시 출발할지 말지 플레이어 내리는지 판별
+    public GameObject player_p;
+    private bool player_is_in = true;
     void Start()
     {
         //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
@@ -56,6 +60,9 @@ public class BackgroundMove : MonoBehaviour
 
     void Update()
     {
+        //플레이어가 내렸는지 판별 
+        if (player_p.transform.position.z > 3.5 || player_p.transform.position.z < -3.5) { player_is_in = false; }
+
         //멈출때 속도 줄이는 부분
         if (!is_end&&transform.position.x < end_pos+10.0f) { target_speed = 0f; }
         // 현재 속도가 목표 속도와 다른지 확인
@@ -112,8 +119,8 @@ public class BackgroundMove : MonoBehaviour
                     StartCoroutine(AnimateDoorsCoroutine(false)); //문닫힘 코루틴 시작
                 }
 
-                // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때)
-                if (stop_timer < 0.0f && is_door_closing)
+                // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때, 플레이어가 타고있을때)
+                if (stop_timer < 0.0f && is_door_closing&& player_is_in)
                 {
                     print("dd");
                     is_end=true; 

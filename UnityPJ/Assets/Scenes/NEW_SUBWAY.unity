@@ -29018,7 +29018,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92b3b1988bb3e14bb971d426099d522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background_move_speed: 5
+  max_speed: 5
+  acceleration_time: 1.5
+  deceleration_time: 1
   tunnel: {fileID: 990220192}
   door_left:
   - {fileID: 1100179174}
@@ -29031,6 +29033,7 @@ MonoBehaviour:
   door_open_pos: 0.7
   is_door_open: 0
   is_door_closing: 0
+  player_p: {fileID: 119318023}
 --- !u!4 &687103828
 Transform:
   m_ObjectHideFlags: 0
