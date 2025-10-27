@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Subway Full Package/SubwayTrain/Scenes/Subway_train.unity
+- path: Assets/Scenes/NEW_SUBWAY.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
