@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
+using System.Collections;
+using Unity.VisualScripting;
 
 public class MonsterController : MonoBehaviour
 {
@@ -14,6 +17,10 @@ public class MonsterController : MonoBehaviour
     private Animator animator;
     private Transform currentTarget;
     public GameObject monsterPrefab; // 몬스터 프리팹
+    public GameObject canvas;
+
+    public GameObject bloodEffectPrefab; // 피 이펙트 프리팹
+    public Transform canvasTransform; // 캔버스 트랜스폼
 
     private bool isFirstTargetReached = false;
     public bool goToSubway = true;
@@ -64,6 +71,21 @@ public class MonsterController : MonoBehaviour
         {
             Debug.LogError("첫 번째 타겟 미설정!");
         }
+    }
+
+    public void ShowBllodEffect()
+    {
+        GameObject effect = Instantiate(bloodEffectPrefab, canvasTransform);
+        effect.SetActive(true);
+
+        effect.transform.localPosition = Vector3.zero;
+        StartCoroutine(DestroyEffectAfterSeconds(effect, 2f));
+    }
+
+    private IEnumerator DestroyEffectAfterSeconds(GameObject effect, float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        Destroy(effect);
     }
 
     void Update()
@@ -153,6 +175,8 @@ public class MonsterController : MonoBehaviour
                         {
                             // 몬스터 현재 위치에 새 몬스터 생성
                             Instantiate(monsterPrefab, monsterPrefab.transform.position, monsterPrefab.transform.rotation);
+                            canvas.SetActive(true);
+
                             spawnedMonster = false;
                             Debug.Log("몬스터 재생성 완료");
                         }

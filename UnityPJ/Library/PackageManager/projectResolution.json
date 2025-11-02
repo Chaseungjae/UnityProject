@@ -9,6 +9,16 @@
     "C:\\Program Files\\6000.0.59f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.2d.sprite@1.0.0": {
+      "name": "com.unity.2d.sprite",
+      "displayName": "2D Sprite",
+      "resolvedPath": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Library\\PackageCache\\com.unity.2d.sprite@897b7eecf04e",
+      "fingerprint": "897b7eecf04ec94126f19c6ce2cba3404cc15178",
+      "editorCompatibility": "2019.2.0a1",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.ai.navigation@2.0.9": {
       "name": "com.unity.ai.navigation",
       "displayName": "AI Navigation",
@@ -56,6 +66,16 @@
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
       "source": "builtin",
+      "testable": false
+    },
+    "com.unity.postprocessing@3.5.1": {
+      "name": "com.unity.postprocessing",
+      "displayName": "Post Processing",
+      "resolvedPath": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Library\\PackageCache\\com.unity.postprocessing@4a41da475b74",
+      "fingerprint": "4a41da475b743ff131a9cfa5fdb2ff80d2c0f2d4",
+      "editorCompatibility": "2019.4.19f1",
+      "version": "3.5.1",
+      "source": "registry",
       "testable": false
     },
     "com.unity.timeline@1.8.9": {

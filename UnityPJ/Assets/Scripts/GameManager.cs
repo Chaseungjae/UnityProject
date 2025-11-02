@@ -1,6 +1,8 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,9 +17,10 @@ public class GameManager : MonoBehaviour
     private GameObject targetOB; // 찾은 오브젝트 저장용
     private Vector3 originalScale; // 원래 크기 저장용
 
+
     public GameObject monsterPrefab; // 몬스터 프리팹
+    public CinemachineVirtualCamera cinemachineVirtualCamera;
     public Camera mainCamera; // 메인 카메라
-    public Camera FixedCamera; // 고정 카메라
     public GameObject Monster;
 
     private Vector3 originalCameraPosition; // 카메라의 원래 위치 저장용
@@ -61,11 +64,15 @@ public class GameManager : MonoBehaviour
 
     void fun_strange_situation_exit_train(GameObject player)//지하철에서 내릴 때
     {
-        mainCamera.enabled = false;
-        FixedCamera.enabled = true;
+        //mainCamera.enabled = false;
+        //FixedCamera.enabled = true;
 
-        FixedCamera.gameObject.SetActive(true);
+        //FixedCamera.gameObject.SetActive(true);
         Monster.gameObject.SetActive(true);
+        cinemachineVirtualCamera.Priority = 1000; // 우선순위 높여서 활성화
+
+
+
 
         if (player.transform.position.z > 3.5 || player.transform.position.z < -3.5)
         {

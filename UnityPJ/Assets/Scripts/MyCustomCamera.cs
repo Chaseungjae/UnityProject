@@ -1,47 +1,47 @@
-//using Unity.Mathematics;
 using UnityEngine;
 
 public class MyCustomCamera : MonoBehaviour
 {
     public GameObject Player;
-    public float mouseSensitivity = 300f; //마우스감도
+    public float mouseSensitivity = 300f;
 
-    private float MouseY;
-    private float MouseX;
+    private float MouseY = 0f;
+    private float MouseX = 0f;
 
     private bool isActive = true;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-
+        // 마우스 잠금 및 커서 숨김 (필요에 따라)
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!isActive)
-        {
-            return;
-        }
+        if (!isActive) return;
+
         if (Player.transform.position.x <= 13)
         {
             Rotate();
         }
     }
+
     public void LockRotationAndStop()
     {
         isActive = false;
-        transform.rotation = Quaternion.Euler(22f, 0f, 0f); // 고정 각도로 설정
+        transform.rotation = Quaternion.Euler(22f, 0f, 0f);
+        Cursor.lockState = CursorLockMode.None; // 필요 시 커서 다시 보이게
+        Cursor.visible = true;
     }
 
     private void Rotate()
     {
-        
-   
-        MouseY -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime; //마우스 y의 힘을 적용
-  
-        MouseY = Mathf.Clamp(MouseY, -90f, 60f); //너무 아래로는 못보게 하기
+        MouseX += Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime;
+        MouseY -= Input.GetAxisRaw("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        transform.localRotation = Quaternion.Euler(MouseY, MouseX, 0f);// 각 축을 한꺼번에 계산
+        MouseY = Mathf.Clamp(MouseY, -90f, 60f);
+
+        transform.localRotation = Quaternion.Euler(MouseY, MouseX, 0f);
     }
 }
