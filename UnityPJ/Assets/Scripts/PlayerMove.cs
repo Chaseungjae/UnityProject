@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public GameObject Player;
     public float Speed = 5f;
     private Rigidbody playerRB;
     public float horizontalInput;
@@ -11,6 +12,8 @@ public class PlayerMove : MonoBehaviour
 
     private float MouseY;
     private float MouseX;
+
+    private bool isActive = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,13 +25,28 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        if(!isActive)
+        {
+            return;
+        }
 
-        transform.Translate(Vector3.forward * Speed * verticalInput * Time.deltaTime);
-        transform.Translate(Vector3.right * Speed * horizontalInput * Time.deltaTime); //캐릭터 이동
-        Rotate();
+        if (transform.position.x <= 13)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
+            transform.Translate(Vector3.forward * Speed * verticalInput * Time.deltaTime);
+            transform.Translate(Vector3.right * Speed * horizontalInput * Time.deltaTime); //캐릭터 이동Rotate();
+            Rotate();
+        }
+       
     }
+    public void LockRotationAndStop()
+    {
+        isActive = false;
+        MouseX = 0f;
+        transform.rotation = Quaternion.Euler(0f, 86.1f, 0f); // 고정 각도로 설정
+    }
+
     private void Rotate()// 마우스 움직임 처리
     {
         MouseX += Input.GetAxisRaw("Mouse X") * mouseSensitivity * Time.deltaTime; //마우스 x와 y의 이동 값 처리

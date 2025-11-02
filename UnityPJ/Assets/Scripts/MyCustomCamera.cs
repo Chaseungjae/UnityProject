@@ -8,6 +8,8 @@ public class MyCustomCamera : MonoBehaviour
 
     private float MouseY;
     private float MouseX;
+
+    private bool isActive = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,8 +19,21 @@ public class MyCustomCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rotate();
+        if (!isActive)
+        {
+            return;
+        }
+        if (Player.transform.position.x <= 13)
+        {
+            Rotate();
+        }
     }
+    public void LockRotationAndStop()
+    {
+        isActive = false;
+        transform.rotation = Quaternion.Euler(22f, 0f, 0f); // 고정 각도로 설정
+    }
+
     private void Rotate()
     {
         
