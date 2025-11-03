@@ -1,0 +1,746 @@
+Using pre-set license
+Built from '6000.0/respin/6000.0.59f1-063c55f2fd0f' branch; Version is '6000.0.59f2 (ef281c76c3c1) revision 15673372'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 32487 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-11-03T11:02:31Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.59f2\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/KSW/Documents/UnityProject/UnityPJ
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57702
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/KSW/Documents/UnityProject/UnityPJ
+C:/Users/KSW/Documents/UnityProject/UnityPJ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [17632]  Target information:
+
+Player connection [17632]  * "[IP] 192.168.0.7 [Port] 0 [Flags] 2 [Guid] 477589619 [EditorId] 477589619 [Version] 1048832 [Id] WindowsEditor(7,1101100uv) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [17632] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17632] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.59f2 (ef281c76c3c1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/KSW/Documents/UnityProject/UnityPJ/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.7242
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.59f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003474 seconds.
+- Loaded All Assemblies, in  0.371 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.275 seconds
+Domain Reload Profiling: 642ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (121ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (275ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (241ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (126ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.654 seconds
+Refreshing native plugins compatible for Editor in 1.42 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.280 seconds
+Domain Reload Profiling: 1930ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (393ms)
+		LoadAssemblies (327ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (128ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1281ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1186ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (1063ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4170 unused Assets / (2.8 MB). Loaded Objects now: 4697.
+Memory consumption went from 96.7 MB to 93.8 MB.
+Total: 8.445300 ms (FindLiveObjects: 0.408500 ms CreateObjectMapping: 0.284600 ms MarkObjects: 6.027700 ms  DeleteObjects: 1.723100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9008.455539 seconds.
+  path: Assets/Scripts/MyCustomCamera.cs
+  artifactKey: Guid(4108fe9a8b7b57648a5f5ccf39d441d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MyCustomCamera.cs using Guid(4108fe9a8b7b57648a5f5ccf39d441d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '407fc5a49ed0942aa107618fd31c574d') in 0.0073318 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.719129 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(3cd1bb3acb1fe364bb59a8afec8c15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager.cs using Guid(3cd1bb3acb1fe364bb59a8afec8c15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd813fe636ac127cf72a4b0d19f38b01') in 0.0005138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.734 seconds
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.662 seconds
+Domain Reload Profiling: 2393ms
+	BeginReloadAssembly (236ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (415ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (179ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (160ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1663ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1551ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (1399ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4168 unused Assets / (2.9 MB). Loaded Objects now: 4701.
+Memory consumption went from 97.4 MB to 94.5 MB.
+Total: 12.174300 ms (FindLiveObjects: 1.122500 ms CreateObjectMapping: 0.372400 ms MarkObjects: 8.129300 ms  DeleteObjects: 2.547800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.704 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.699 seconds
+Domain Reload Profiling: 2397ms
+	BeginReloadAssembly (239ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (383ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (143ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1699ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1584ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (1429ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 5.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4168 unused Assets / (2.6 MB). Loaded Objects now: 4702.
+Memory consumption went from 97.4 MB to 94.8 MB.
+Total: 10.815500 ms (FindLiveObjects: 0.631700 ms CreateObjectMapping: 0.399400 ms MarkObjects: 7.416300 ms  DeleteObjects: 2.366200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 358.634672 seconds.
+  path: Assets/Scripts/GameManager.cs
+  artifactKey: Guid(3cd1bb3acb1fe364bb59a8afec8c15d6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/GameManager.cs using Guid(3cd1bb3acb1fe364bb59a8afec8c15d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6875e18e3a0d3c906aa2e568332a66bd') in 0.089307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MonsterMutant 7/MonsterMutant7.unity
+  artifactKey: Guid(3309cf4a93935bf40b6f240979cbe657) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/MonsterMutant7.unity using Guid(3309cf4a93935bf40b6f240979cbe657) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a9848d4e948f3d9a2e7e16263594c2ee') in 0.0156759 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_endcorner_02.prefab
+  artifactKey: Guid(dbc9cf1396114b94a8636d674ea32f35) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_endcorner_02.prefab using Guid(dbc9cf1396114b94a8636d674ea32f35) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0f025e4caf39b2ff8f7ce93380af9f60') in 0.0281364 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+  artifactKey: Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader using Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '95c5eaf64e80643915982d43849b5a5b') in 0.0142488 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_100_01.prefab
+  artifactKey: Guid(3f093299781deca47987169cbf66d73d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_100_01.prefab using Guid(3f093299781deca47987169cbf66d73d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a2335f56747c2b3367becc4b3b7a2806') in 0.0158724 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f7f72d3218ee0cef2163423e2ef73050') in 0.0123362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'dbe52ccefe7ea3c613ef6b32e6a429ed') in 0.0445304 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/MonsterMutant 7/Materials/Mat_MonsterMutant7_Skin3.mat
+  artifactKey: Guid(968504376ab1d73449e8301ef7f986cd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Materials/Mat_MonsterMutant7_Skin3.mat using Guid(968504376ab1d73449e8301ef7f986cd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'de0776a8444005bc07b4185e382afb57') in 0.1755289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Q Vignette/Prefabs/Q_Vignette_Single.prefab
+  artifactKey: Guid(320bc0d91a835b848865631e1c7b6ef9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Prefabs/Q_Vignette_Single.prefab using Guid(320bc0d91a835b848865631e1c7b6ef9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ab60217ccc549a2466411b86b8dd2959') in 0.0256557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 59
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e5055b92c193eaeb6e6821fbabf89e1f') in 0.0152854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_end_01.prefab
+  artifactKey: Guid(e039d78760eb2ee489f0a3acd99399e9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_end_01.prefab using Guid(e039d78760eb2ee489f0a3acd99399e9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd67fb27b8341d54aa57a4eed5b2d144c') in 0.0154088 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+  artifactKey: Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset using Guid(c41005c129ba4d66911b75229fd70b45) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f0a91d56839bd618122b79f9d0405572') in 0.0167253 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Q Vignette/Demos/Demo_Animated_Single.unity
+  artifactKey: Guid(e8a78da3a4c1445498364dffd1522945) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Demos/Demo_Animated_Single.unity using Guid(e8a78da3a4c1445498364dffd1522945) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7da245fc22944b57a2055d9c8c8e1ead') in 0.0135442 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_wall_02.prefab
+  artifactKey: Guid(ef4b9fcce63d5594b983e7ce192ac1eb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_wall_02.prefab using Guid(ef4b9fcce63d5594b983e7ce192ac1eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c83f86272875262e66d7cc2491e33406') in 0.0186516 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Floor/SM_int_floor_300_01.prefab
+  artifactKey: Guid(08500d9776bc18c4586fa9ed91c8f73e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Floor/SM_int_floor_300_01.prefab using Guid(08500d9776bc18c4586fa9ed91c8f73e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '740f59c73a307d326f040a369bd35f85') in 0.0145567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Scenes/NEW_SUBWAY/NavMesh-Base mesh MonsterMutant7 skin1.asset
+  artifactKey: Guid(baa5f40eda6825b43ae83a3ceb8a5812) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/NEW_SUBWAY/NavMesh-Base mesh MonsterMutant7 skin1.asset using Guid(baa5f40eda6825b43ae83a3ceb8a5812) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '12f026a598e77223edac3fdc305e953a') in 0.0142682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Q Vignette/Demos/DemoStuff/DemoPrefabs/PillarCube.prefab
+  artifactKey: Guid(14064d70ca7345d4a8201e641ad7dce1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Demos/DemoStuff/DemoPrefabs/PillarCube.prefab using Guid(14064d70ca7345d4a8201e641ad7dce1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b658b5c4b17bcb86737fa6fc8218c9ae') in 0.0214324 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Pole/SM_pole_01.prefab
+  artifactKey: Guid(f176b97cab627de4c967c4b9c5a21d88) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Pole/SM_pole_01.prefab using Guid(f176b97cab627de4c967c4b9c5a21d88) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'de4aff01a4c4e2afb8500ffd321c7be3') in 0.0156756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+  artifactKey: Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc using Guid(3997e2241185407d80309a82f9148466) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '10822ff1d8249d89bcd502a4061beba1') in 0.0227277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Scenes/NEW_SUBWAY/NavMesh-clear.asset
+  artifactKey: Guid(2fc344720229d4748baf1f878d73b4f1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/NEW_SUBWAY/NavMesh-clear.asset using Guid(2fc344720229d4748baf1f878d73b4f1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'faf7655b6de13278ed510b7bb4b4bb14') in 0.0159455 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_end_01.prefab
+  artifactKey: Guid(dcf5223a5523f394cb5d57491490b7ee) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_end_01.prefab using Guid(dcf5223a5523f394cb5d57491490b7ee) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd811f4da430a9c6b70b398606bda72e6') in 0.0151871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MonsterMutant 7/MonsterMutant7 Animator Controller.controller
+  artifactKey: Guid(f6482d4ee17f77042b91e0a421b67d08) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/MonsterMutant7 Animator Controller.controller using Guid(f6482d4ee17f77042b91e0a421b67d08) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2cc286f4d32cdcb5eeff705a7dcdb86c') in 0.016226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Chair/SM_chair_01b.prefab
+  artifactKey: Guid(302beb64ea3e494468adf014e82bbbca) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Chair/SM_chair_01b.prefab using Guid(302beb64ea3e494468adf014e82bbbca) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e9462d60c0b11a8334483d5ecfa91f79') in 0.0142816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Materials/MI_metalpole_01.mat
+  artifactKey: Guid(f211375941a85f94bb8eac28a6230316) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Materials/MI_metalpole_01.mat using Guid(f211375941a85f94bb8eac28a6230316) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3ad22cb3697063eb6ffec34aa718b353') in 0.0180869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '44d429ca2ef91b7ccd48ec56970d4ed2') in 0.0294641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Floor_Station_01_Mat.mat
+  artifactKey: Guid(894f89519512f4248beae13969c4889f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/subway_asset/Subway_ModularEnvironment/Materials/Station_Materials/Floor_Station_01_Mat.mat using Guid(894f89519512f4248beae13969c4889f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e8568cc5297e54c79f9c1af69c5c11ad') in 0.0405106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0198271510d7db644902166af3551722') in 0.0150208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Q Vignette/Prefabs/Misc/VignetteCorner.prefab
+  artifactKey: Guid(8f08e2236a19e7d47b4057cc4269c807) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Prefabs/Misc/VignetteCorner.prefab using Guid(8f08e2236a19e7d47b4057cc4269c807) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1c374b6d4dae4ce677123da850f30181') in 0.0180444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_window_200_01 (4).prefab
+  artifactKey: Guid(1c767f993623e804cba4abbbb9d46cf2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_window_200_01 (4).prefab using Guid(1c767f993623e804cba4abbbb9d46cf2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '58ae54aa598d214ba5082e17612796ef') in 0.0177561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+  artifactKey: Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader using Guid(a02a7d8c237544f1962732b55a9aebf1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cff8767b4d4e0b4c0001a344ad8f8940') in 0.0165135 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/MonsterMutant 7/Prefab/Base mesh MonsterMutant7 skin3.prefab
+  artifactKey: Guid(1f767fa48db25104c96a9670cc753b1b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Prefab/Base mesh MonsterMutant7 skin3.prefab using Guid(1f767fa48db25104c96a9670cc753b1b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f0b900eeed7ac399bdd12b7253087913') in 0.0349132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 399
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/NEW_SUBWAY/NavMesh-NavigationSurface.asset
+  artifactKey: Guid(2d377f299540b124ca2fd7c40037bc28) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/NEW_SUBWAY/NavMesh-NavigationSurface.asset using Guid(2d377f299540b124ca2fd7c40037bc28) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9ddda306aad36d65f6fd5d76d0d26ff2') in 0.0138249 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Q Vignette/Demos/DemoStuff/DemoAnimation/Q_Vignette_Split.controller
+  artifactKey: Guid(89ac703b366c0fe4799285e4a055fe55) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Demos/DemoStuff/DemoAnimation/Q_Vignette_Split.controller using Guid(89ac703b366c0fe4799285e4a055fe55) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd00dc315852e70e1bb0336787723e06e') in 0.013537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl
+  artifactKey: Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl using Guid(96de908384869cd409c75efa351d5edf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'eead896926bf477cb2c53faaa0f48daa') in 0.0246192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Ext/SM_ext_wall_window_200_01.prefab
+  artifactKey: Guid(726c8e28082d25e4697602e8ff63d7be) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Ext/SM_ext_wall_window_200_01.prefab using Guid(726c8e28082d25e4697602e8ff63d7be) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c49bd7b885067790e56fd0acff9b707b') in 0.0183306 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph
+  artifactKey: Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph using Guid(124c112a6e8f1a54e8b0870e881b56d8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f171ffe71d269187c39c7e326de5feff') in 0.0139894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/MonsterMutant 7/Base mesh/Materials/Mat_MonsterMutant2_Body.mat
+  artifactKey: Guid(fb32f826687f1224cad930ec88816111) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Base mesh/Materials/Mat_MonsterMutant2_Body.mat using Guid(fb32f826687f1224cad930ec88816111) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '00f5c25d636d2451626d10fb48c4ba37') in 0.0168067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b098e22111eea3f485d0540e37de3318') in 0.0176478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Scenes/NEW_SUBWAY_Profiles/Cube Profile.asset
+  artifactKey: Guid(d6c751a1a66dd5241bf09f606c400e49) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scenes/NEW_SUBWAY_Profiles/Cube Profile.asset using Guid(d6c751a1a66dd5241bf09f606c400e49) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ac0ded346b3c524dc223b1b0590a8c0') in 0.0361268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_window_150_01.prefab
+  artifactKey: Guid(7dfc5e4fc907a8242b8926e76fcbe99c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_int_wall_window_150_01.prefab using Guid(7dfc5e4fc907a8242b8926e76fcbe99c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '58a8549bb59bfb8a216ee4fd2d9fa6da') in 0.0258221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Q Vignette/Demos/Demo_Animated_Split.unity
+  artifactKey: Guid(2741dbd27aa68034da9f0a62471531cb) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Demos/Demo_Animated_Split.unity using Guid(2741dbd27aa68034da9f0a62471531cb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '8fa2b9246a2d20ddb3d36143525cfaac') in 0.01817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Q Vignette/Demos/DemoStuff/DemoAnimation/AnimSplitExample.anim
+  artifactKey: Guid(b271ef342347fba49a7e4615569d5606) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Q Vignette/Demos/DemoStuff/DemoAnimation/AnimSplitExample.anim using Guid(b271ef342347fba49a7e4615569d5606) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4dd7622be92a9b42bf367b3eb8982c08') in 0.0285685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MonsterMutant 7/Stand/Standard_Two_Sided .shader
+  artifactKey: Guid(43d11ccca3659d14fa7e2ff58209b4b0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Stand/Standard_Two_Sided .shader using Guid(43d11ccca3659d14fa7e2ff58209b4b0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '168b50fdc66c3eb524f0ea8711796141') in 0.0210328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Ads/SM_wallposter_Rules_01.prefab
+  artifactKey: Guid(f57f894f92b470b41af339af613d26e5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Ads/SM_wallposter_Rules_01.prefab using Guid(f57f894f92b470b41af339af613d26e5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1555ddb5097f47ff850518fd786b11ca') in 0.0251801 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Pole/SM_pole_02.prefab
+  artifactKey: Guid(122e5af8b74ff3b4da366573b0005420) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Pole/SM_pole_02.prefab using Guid(122e5af8b74ff3b4da366573b0005420) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '851d41ab5dbe6b565ef2eaaff7a50b23') in 0.027892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 34
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Ext/SM_ext_wall_window_150.prefab
+  artifactKey: Guid(7eb27bd7ed0d1ff46abf689ade20eb87) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Ext/SM_ext_wall_window_150.prefab using Guid(7eb27bd7ed0d1ff46abf689ade20eb87) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd0b90e6501ed8136fba5aaf9428cb2a0') in 0.0190517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MonsterMutant 7/Prefab/Base mesh MonsterMutant7 skin4.prefab
+  artifactKey: Guid(f2e03fd1cffea284890ee861660f8b1d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Prefab/Base mesh MonsterMutant7 skin4.prefab using Guid(f2e03fd1cffea284890ee861660f8b1d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b67cdbab1d9bcf8528e333c98ccb3f37') in 0.0404776 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 399
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_wall_01.prefab
+  artifactKey: Guid(131ab3b13174e0541b7957e778029205) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Subway Full Package/SubwayTrain/Prefabs/Walls/SM_door_wall_01.prefab using Guid(131ab3b13174e0541b7957e778029205) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd15fda8ec68910d6cb39e443ad95c19') in 0.0229277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph
+  artifactKey: Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph using Guid(f63d574838ccfb44f84acc05fed0af48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4875fd3a25666c8c3e2561471283c466') in 0.0217535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '869189f0a92cacda1168eb7bf46f1f93') in 0.0198172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/MonsterMutant 7/MonsterMutant7Settings.lighting
+  artifactKey: Guid(f1366617447dbc3469930be041d8a978) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/MonsterMutant7Settings.lighting using Guid(f1366617447dbc3469930be041d8a978) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '64016d5e387d4a5bb0ac50b730cc1de3') in 0.0432481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e769cc93443ff2519d1eaaaa651a3062') in 0.0181062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MonsterMutant 7/New Avatar Mask.mask
+  artifactKey: Guid(1cd2af0dac6f0f74a98bad32a01fc581) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/New Avatar Mask.mask using Guid(1cd2af0dac6f0f74a98bad32a01fc581) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f576294028704a440e30fe89f10da474') in 0.0315069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/MonsterMutant 7/Materials/Mat_MonsterMutant7_Skin1.mat
+  artifactKey: Guid(a540b7e0771a487438f2e7d3027d8a31) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/MonsterMutant 7/Materials/Mat_MonsterMutant7_Skin1.mat using Guid(a540b7e0771a487438f2e7d3027d8a31) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '47ba7adb46e388f8a3e9bfdcc7207ed9') in 0.0809061 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

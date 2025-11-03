@@ -90,6 +90,11 @@ public class MonsterController : MonoBehaviour
 
     void Update()
     {
+        if (agent == null || !agent.enabled || !agent.isOnNavMesh)
+        {
+            return;
+        }
+
         if (agent.pathPending)
             return;
 
@@ -165,6 +170,10 @@ public class MonsterController : MonoBehaviour
                 else
                 {
                     Debug.Log("최종 목적지 도착");
+
+                    // [수정 1] 먼저 agent를 멈춥니다.
+                    agent.isStopped = true;
+
                     if (runLayerIndex != -1 && baseLayerIndex != -1)
                     {
                         animator.SetLayerWeight(runLayerIndex, 0f);
@@ -184,14 +193,19 @@ public class MonsterController : MonoBehaviour
                         FixedCamera.transform.rotation = Quaternion.Euler(-27.22f, -41f, 0f);
                         FixedCamera.transform.position = new Vector3(10.48f, 1.2f, -8f);
 
-                        Destroy(gameObject);
+                        // [수정 2] 파괴(Destroy) 대신 비활성화(SetActive)
+                        gameObject.SetActive(false);
                     }
                     else
                     {
                         animator.SetBool("Run", false);
+
+                        // [수정 2] 파괴(Destroy) 대신 비활성화(SetActive)
+                        gameObject.SetActive(false);
                     }
 
-                    agent.isStopped = true;
+                    // [수정 3] 비활성화 후 즉시 Update 종료
+                    return;
                 }
             }
         }
