@@ -169,7 +169,6 @@ public class BackgroundMove : MonoBehaviour
         // Subway 자체의 위치는 GameManager가 스폰 시점에 지정하므로 여기선 리셋 X
         gameObject.transform.position = original_tunnel_position2;
         tunnel.transform.position = original_tunnel_position;
-
         // 속도 및 이동 관련 변수 리셋
         current_speed = 0.0f;
         target_speed = max_speed; // Start()에서처럼 즉시 출발하도록 설정
@@ -182,8 +181,6 @@ public class BackgroundMove : MonoBehaviour
         is_door_open = false;
         is_door_closing = false; 
         player_is_in = true;    //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
-
-        target_speed = max_speed;
 
         left_door_closed_pos = new Vector3[door_left.Length];
         for (int i = 0; i < door_left.Length; i++)

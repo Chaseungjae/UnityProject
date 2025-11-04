@@ -10,13 +10,13 @@ public class GameManager : MonoBehaviour
     public bool strange_situation = false;
     public bool stage_clear = false;
     public GameObject player;
-    public BackgroundMove Background; 
+    public BackgroundMove Background;
 
     public GameObject monsterPrefab;
     public CinemachineVirtualCamera cinemachineVirtualCamera;
     public Camera mainCamera;
     public GameObject Monster;
-    public MonsterController monsterController; 
+    public MonsterController monsterController;
 
     public PlayerMove playerControoler;
     public MyCustomCamera CameraControoler;
@@ -46,13 +46,12 @@ public class GameManager : MonoBehaviour
         if (player.transform.position.x > 13 && !isStagetTransitioning)
         {
             Debug.Log("트리거작동");
-            fun_strange_situation_exit_train(player);
-            fun_strange_situation_keep_going();
+            fun_strange_situation_exit_or_stay(player);
 
         }
     }
 
-    void fun_strange_situation_exit_train(GameObject player)//지하철에서 내릴 때
+    void fun_strange_situation_exit_or_stay(GameObject player)//지하철에서 내릴 때
     {
         if (player.transform.position.z > 3.5 || player.transform.position.z < -3.5)
         {
@@ -65,7 +64,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("YOU DIE!!!!");
 
                 stage_clear = true;
-                isStagetTransitioning = true; 
+                isStagetTransitioning = true;
                 is_success = false;
 
                 StartCoroutine(DeathAndResetRoutine(15f));
@@ -74,36 +73,36 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("CLEAR!!");
                 stage_clear = true;
-                isStagetTransitioning = true; 
+                isStagetTransitioning = true;
                 is_success = true;
 
                 StartCoroutine(DeathAndResetRoutine(10f));
             }
         }
-    }
-    void fun_strange_situation_keep_going()//지하철에 계속 타있을 때
-    {
-        // 이미 전환 중이면(stage_clear == true) 중복 실행 방지
-        if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
+        else
         {
-            Debug.Log("CLEAR!!");
-            stage_clear = true;
-            isStagetTransitioning = true; 
-            is_success = true;
-            StartCoroutine(DeathAndResetRoutine(10f));
-        }
-        else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
-        {
-            //몬스터 활성화 전 리셋
-            Monster.gameObject.SetActive(true);
-            cinemachineVirtualCamera.Priority = 1000;
-            Debug.Log("YOU DIE!!!!");
+            // 이미 전환 중이면(stage_clear == true) 중복 실행 방지
+            if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
+            {
+                Debug.Log("CLEAR!!");
+                stage_clear = true;
+                isStagetTransitioning = true;
+                is_success = true;
+                StartCoroutine(DeathAndResetRoutine(10f));
+            }
+            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
+            {
+                //몬스터 활성화 전 리셋
+                Monster.gameObject.SetActive(true);
+                cinemachineVirtualCamera.Priority = 1000;
+                Debug.Log("YOU DIE!!!!");
 
-            stage_clear = true;
-            isStagetTransitioning = true; 
-            is_success = false;
+                stage_clear = true;
+                isStagetTransitioning = true;
+                is_success = false;
 
-            StartCoroutine(DeathAndResetRoutine(15f));
+                StartCoroutine(DeathAndResetRoutine(15f));
+            }
         }
     }
 
@@ -114,7 +113,7 @@ public class GameManager : MonoBehaviour
         // 모든 연출을 리셋
         Monster.gameObject.SetActive(false);
         cinemachineVirtualCamera.Priority = 10;
-       // monsterController.ResetMonster(); // 몬스터 컨트롤러 내부 상태도 리셋
+        // monsterController.ResetMonster(); // 몬스터 컨트롤러 내부 상태도 리셋
 
         if (!is_first_load && current_subway != null)
         {
@@ -168,14 +167,14 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        
-        current_subway = Instantiate(prefab_spawn, new Vector3(0,0,0), prefab_spawn.transform.rotation);
+
+        current_subway = Instantiate(prefab_spawn, new Vector3(0, 0, 0), prefab_spawn.transform.rotation);
         var new_subway = current_subway.GetComponent<Subway>();
         Background.door_left = new_subway.door_left;
         Background.door_right = new_subway.door_right;
         //변수 초기화 
         stage_clear = false;
-        isStagetTransitioning = false; 
+        isStagetTransitioning = false;
         is_success = false;
         is_first_load = false; // 첫 로드 완료
         Background.reset_background(); // 새 지하철의 배경 리셋
