@@ -25,7 +25,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isActive)
+        if (!isActive)
         {
             return;
         }
@@ -38,7 +38,7 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(Vector3.right * Speed * horizontalInput * Time.deltaTime); //캐릭터 이동Rotate();
             Rotate();
         }
-       
+
     }
     public void LockRotationAndStop()
     {
