@@ -39,24 +39,11 @@ public class BackgroundMove : MonoBehaviour
     //지하철 다시 출발할지 말지 플레이어 내리는지 판별
     public GameObject player_p;
     private bool player_is_in = true;
-    void Start()
-    {
-        //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
-        target_speed = max_speed;
 
-        left_door_closed_pos = new Vector3[door_left.Length];
-        for (int i = 0; i < door_left.Length; i++)
-        {
-            left_door_closed_pos[i] = door_left[i].transform.position;
-        }
-        // 오른쪽 문들의 초기(닫힌) 위치 저장
-        right_door_closed_pos = new Vector3[door_right.Length];
-        for (int i = 0; i < door_right.Length; i++)
-        {
-            right_door_closed_pos[i] = door_right[i].transform.position;
-        }
+    //초기화용 변수 
+    private Vector3 original_tunnel_position = new Vector3(150f, 0f, 0f);
+    private Vector3 original_tunnel_position2 = new Vector3(-5f,0f,0f);
 
-    }
 
     void Update()
     {
@@ -109,29 +96,29 @@ public class BackgroundMove : MonoBehaviour
                     is_door_open = true;
                     is_door_closing = false;
                     print("open");
-                    StartCoroutine(AnimateDoorsCoroutine(true)); //문열림 코루틴 시작
+                    StartCoroutine(animate_doors_coroutine(true)); //문열림 코루틴 시작
                 }
                 else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
                 {
                     print("close");
                     is_door_closing = true;
                     is_door_open = false;
-                    StartCoroutine(AnimateDoorsCoroutine(false)); //문닫힘 코루틴 시작
+                    StartCoroutine(animate_doors_coroutine(false)); //문닫힘 코루틴 시작
                 }
-
+                /*
                 // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때, 플레이어가 타고있을때)
                 if (stop_timer < 0.0f && is_door_closing&& player_is_in)
                 {
                     print("dd");
                     is_end=true; 
                     target_speed = max_speed;
-                }
+                }*/
             }
         }
     }
 
     //문열림 함수
-    IEnumerator AnimateDoorsCoroutine(bool open)
+    IEnumerator animate_doors_coroutine(bool open)
     {
         float elapsedTime = 0f;
         Vector3[] leftStartPositions = new Vector3[door_left.Length];
@@ -173,6 +160,38 @@ public class BackgroundMove : MonoBehaviour
         {
             door_left[i].transform.position = leftTargetPositions[i];
             door_right[i].transform.position = rightTargetPositions[i];
+        }
+    }
+    public void reset_background()
+    {
+        Debug.Log("Resetting BackgroundMove state");
+        StopAllCoroutines();
+        // Subway 자체의 위치는 GameManager가 스폰 시점에 지정하므로 여기선 리셋 X
+        gameObject.transform.position = original_tunnel_position2;
+        tunnel.transform.position = original_tunnel_position;
+        // 속도 및 이동 관련 변수 리셋
+        current_speed = 0.0f;
+        target_speed = max_speed; // Start()에서처럼 즉시 출발하도록 설정
+        velocity = 0.0f;
+        is_end = false;
+        // 타이머 리셋
+        move_timer = 10.0f;
+        stop_timer = 12.0f;
+        // 상태 변수 리셋
+        is_door_open = false;
+        is_door_closing = false; 
+        player_is_in = true;    //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
+
+        left_door_closed_pos = new Vector3[door_left.Length];
+        for (int i = 0; i < door_left.Length; i++)
+        {
+            left_door_closed_pos[i] = door_left[i].transform.position;
+        }
+        // 오른쪽 문들의 초기(닫힌) 위치 저장
+        right_door_closed_pos = new Vector3[door_right.Length];
+        for (int i = 0; i < door_right.Length; i++)
+        {
+            right_door_closed_pos[i] = door_right[i].transform.position;
         }
     }
 }
