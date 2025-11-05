@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\chaseungjae\\desktop\\unity3dpj\\unityproject\\unitypj\\assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\chaseungjae\\desktop\\unity3dpj\\unityproject\\unitypj\\assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,8 +54,7 @@
               "RelativeToolTip": "Assets\\Q Vignette\\Scripts\\Q_Vignette_Single.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T10:00:56.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T10:00:56.913Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.postprocessing@4a41da475b74\\PostProcessing\\Runtime\\Effects\\AmbientOcclusion.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAcwLwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T09:09:47.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T09:09:47.497Z"
             },
             {
               "$type": "Document",
@@ -80,18 +78,17 @@
               "RelativeToolTip": "Assets\\Scripts\\BackgroundMove.cs",
               "ViewState": "AgIAAG8AAAAAAAAAAAAIwHkAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T14:00:39.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T14:00:39.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MonsterController.cs",
               "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MonsterController.cs",
               "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\MonsterController.cs",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAcwBYBAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAYwO4AAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T13:53:52.944Z",
               "EditorCaption": ""
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MyCustomCamera.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T13:52:50.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T13:52:50.379Z"
             },
             {
               "$type": "Document",
@@ -119,18 +115,17 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAIwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T08:21:12.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T08:21:12.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAQwGsAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGwAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-11T12:57:44.263Z",
               "EditorCaption": ""
