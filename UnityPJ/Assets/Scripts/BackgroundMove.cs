@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class BackgroundMove : MonoBehaviour
 {
+    GameManager gameManager;
     public float max_speed = 5.0f; // 지하철의 최대 속도
     public float acceleration_time = 1.5f; // 최대 속도까지 도달하는 데 걸리는 시간 (초)
     public float deceleration_time = 1.0f; // 멈추는 데 걸리는 시간 (초)
@@ -116,7 +117,10 @@ public class BackgroundMove : MonoBehaviour
                     print("close");
                     is_door_closing = true;
                     is_door_open = false;
-                    StartCoroutine(AnimateDoorsCoroutine(false)); //문닫힘 코루틴 시작
+                    if (gameManager.stage_clear && gameManager.is_subway) 
+                    {
+                        StartCoroutine(AnimateDoorsCoroutine(false));         
+                    } //문닫힘 코루틴 시작
                 }
 
                 // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때, 플레이어가 타고있을때)

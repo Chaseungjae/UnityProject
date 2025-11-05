@@ -1,18 +1,19 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
 using System.Collections;
-using Unity.VisualScripting;
 
 public class MonsterController : MonoBehaviour
 {
     GameManager gameManager;
+    BackgroundMove background; // BackgroundMove 스크립트 참조 변수
+
     [SerializeField] Transform firstTarget;      // 1차 목적지 (예: 지하철 입구)
     [SerializeField] Transform secondTargetA;   // 2차 목적지 옵션1 (지하철 내부)
     [SerializeField] Transform secondTargetB;   // 2차 목적지 옵션2 (카메라 위치)
     [SerializeField] Transform cameraTransform; // 카메라 Transform, 바라볼 방향용
 
     public Camera FixedCamera; // 고정 카메라
+    public Camera FixedCamera_player; // 플레이어 고정 카메라
     private NavMeshAgent agent;
     private Animator animator;
     private Transform currentTarget;
@@ -30,17 +31,23 @@ public class MonsterController : MonoBehaviour
 
     private bool spawnedMonster = true;
 
+    // 직접 이동 관련 변수
+    public float directMoveSpeed = 5f;  // 직접 이동 속도
+    private bool isDirectMoving = false; // 직접 이동 중인지 여부
+    private Transform directMoveTarget = null;
+
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        background = FindObjectOfType<BackgroundMove>();
+        gameManager = FindObjectOfType<GameManager>();
 
         animator.applyRootMotion = false; // Root Motion 비활성화 (NavMeshAgent 속도 적용을 위해)
 
         if (cameraTransform == null && Camera.main != null)
             cameraTransform = Camera.main.transform;
 
-        // 레이어 인덱스 가져오기
         runLayerIndex = animator.GetLayerIndex("RunLayer");
         baseLayerIndex = animator.GetLayerIndex("Base Layer");
 
@@ -50,7 +57,6 @@ public class MonsterController : MonoBehaviour
         if (baseLayerIndex == -1)
             Debug.LogWarning("Animator에 'Base Layer' 레이어가 없습니다. 레이어 이름을 확인하세요.");
 
-        // 시작 시 Base Layer 활성화, RunLayer 비활성화
         if (baseLayerIndex != -1)
             animator.SetLayerWeight(baseLayerIndex, 1f);
         if (runLayerIndex != -1)
@@ -88,8 +94,66 @@ public class MonsterController : MonoBehaviour
         Destroy(effect);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (spawnedMonster)
+            {
+                Instantiate(monsterPrefab, monsterPrefab.transform.position, monsterPrefab.transform.rotation);
+                Vector3 spawnPosition = new Vector3(1.01f, -1.22f, -1.87f);
+                Quaternion spawnRotation = Quaternion.Euler(34.7f, 0, 0);
+                Instantiate(monsterPrefab, spawnPosition, spawnRotation);
+                canvas.SetActive(true);
+                spawnedMonster = false;
+                Debug.Log("몬스터 재생성 완료");
+            }
+            FixedCamera.transform.rotation = Quaternion.Euler(-27.22f, -41f, 0f);
+            FixedCamera.transform.position = new Vector3(10.48f, 1.2f, -8f);
+
+            FixedCamera_player.transform.rotation = Quaternion.Euler(-22.22f, -180f, 0f);
+            FixedCamera_player.transform.position = new Vector3(1.12f, 0.4f, -0.15f);
+
+
+            Destroy(gameObject);
+        }
+    }
+
     void Update()
     {
+        // 직접 이동 처리 우선
+        if (isDirectMoving && directMoveTarget != null)
+        {
+            Vector3 direction = (directMoveTarget.position - transform.position);
+            direction.y = 0;
+            float distance = direction.magnitude;
+
+            if (distance > 0.1f)
+            {
+                Vector3 moveDir = direction.normalized;
+                transform.position += moveDir * directMoveSpeed * Time.deltaTime;
+
+                Quaternion lookRot = Quaternion.LookRotation(moveDir);
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime * 5f);
+            }
+            else
+            {
+                isDirectMoving = false;
+                directMoveTarget = null;
+
+                // 도착 처리 및 애니메이션 Idle로 변경
+                animator.SetLayerWeight(runLayerIndex, 0f);
+                animator.SetLayerWeight(baseLayerIndex, 1f);
+                animator.Play("Idle", baseLayerIndex);
+
+                // NavMeshAgent 재활성화 가능 (필요하면)
+                agent.enabled = true;
+                agent.isStopped = false;
+            }
+            return;  // 직접 이동 중 NavMeshAgent 이동 로직 Skip
+        }
+
+        // NavMeshAgent 이동 처리
         if (agent.pathPending)
             return;
 
@@ -101,90 +165,44 @@ public class MonsterController : MonoBehaviour
                 {
                     isFirstTargetReached = true;
                     FixedCamera.transform.rotation = Quaternion.Euler(0f, -60f, 0f);
-                    if (goToSubway && secondTargetA != null)
-                    {
-                        currentTarget = secondTargetA;
-                        agent.SetDestination(currentTarget.position);
 
-                        if (runLayerIndex != -1 && baseLayerIndex != -1)
+                    if (gameManager.stage_clear)
+                    {
+                        if (gameManager.is_subway)
                         {
-                            animator.SetLayerWeight(baseLayerIndex, 0f);
-                            animator.SetLayerWeight(runLayerIndex, 1f);
-                            animator.Play("run2", runLayerIndex);
+                            // 직접 이동 시작(A타겟)
+                            StartDirectMove(secondTargetA);
                         }
                         else
                         {
-                            animator.SetBool("run2", true);
+                            // NavMeshAgent 사용(B타겟)
+                            currentTarget = secondTargetB;
+                            SetAgentDestination(currentTarget.position);
                         }
-
-                        agent.speed = 16f;  // 속도 변경 위치 조정
-                        agent.SetDestination(currentTarget.position); // 적용 강제
-
-                        Debug.Log("지하철 내부로 이동, RunLayer에서 달리기 애니메이션 실행");
-                    }
-                    else if (!goToSubway && secondTargetB != null)
-                    {
-                        currentTarget = secondTargetB;
-                        FixedCamera.transform.rotation = Quaternion.Euler(0f, -51f, 0f);
-                        agent.speed = 16.0f;  // 먼저 속도 증가
-                        agent.SetDestination(currentTarget.position); // 목적지 재설정
-
-
-                        if (runLayerIndex != -1 && baseLayerIndex != -1)
-                        {
-                            animator.SetLayerWeight(baseLayerIndex, 0f);
-                            animator.SetLayerWeight(runLayerIndex, 1f);
-                            animator.Play("run2", runLayerIndex);
-
-                        }
-                        else
-                        {
-                            animator.SetBool("run2", true);
-                        }
-
-                        Debug.Log("카메라 위치로 이동, RunLayer에서 달리기 애니메이션 실행");
                     }
                     else
                     {
-                        Debug.LogWarning("두 번째 타겟 미설정");
-
-                        if (runLayerIndex != -1 && baseLayerIndex != -1)
+                        if (gameManager.is_subway)
                         {
-                            animator.SetLayerWeight(runLayerIndex, 0f);
-                            animator.SetLayerWeight(baseLayerIndex, 1f);
-                            animator.Play("Idle", baseLayerIndex);
+                            // 직접 이동 시작(A타겟)
+                            StartDirectMove(secondTargetA);
                         }
                         else
                         {
-                            animator.SetBool("Run", false);
+                            // NavMeshAgent 사용(B타겟)
+                            currentTarget = secondTargetB;
+                            SetAgentDestination(currentTarget.position);
                         }
-
-                        return;
                     }
                 }
                 else
                 {
-                    Debug.Log("최종 목적지 도착");
+                    // 최종 목적지 도착 및 정지 처리
                     if (runLayerIndex != -1 && baseLayerIndex != -1)
                     {
                         animator.SetLayerWeight(runLayerIndex, 0f);
                         animator.SetLayerWeight(baseLayerIndex, 1f);
                         animator.Play("Idle", baseLayerIndex);
-
-                        if (spawnedMonster)
-                        {
-                            // 몬스터 현재 위치에 새 몬스터 생성
-                            Instantiate(monsterPrefab, monsterPrefab.transform.position, monsterPrefab.transform.rotation);
-                            canvas.SetActive(true);
-
-                            spawnedMonster = false;
-                            Debug.Log("몬스터 재생성 완료");
-                        }
-
-                        FixedCamera.transform.rotation = Quaternion.Euler(-27.22f, -41f, 0f);
-                        FixedCamera.transform.position = new Vector3(10.48f, 1.2f, -8f);
-
-                        Destroy(gameObject);
                     }
                     else
                     {
@@ -221,6 +239,54 @@ public class MonsterController : MonoBehaviour
                     transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
                 }
             }
+        }
+    }
+
+
+    private void StartDirectMove(Transform target)
+    {
+        // NavMeshAgent 비활성화
+        if (agent.enabled)
+        {
+            agent.isStopped = true;
+            agent.enabled = false;
+        }
+        directMoveTarget = target;
+        isDirectMoving = true;
+
+        if (runLayerIndex != -1 && baseLayerIndex != -1)
+        {
+            animator.SetLayerWeight(baseLayerIndex, 0f);
+            animator.SetLayerWeight(runLayerIndex, 1f);
+            animator.Play("run2", runLayerIndex);
+        }
+        else
+        {
+            animator.SetBool("run2", true);
+        }
+    }
+
+
+    private void SetAgentDestination(Vector3 position)
+    {
+        if (!agent.enabled)
+        {
+            agent.enabled = true;
+        }
+        agent.isStopped = false;
+        currentTarget = null;
+        agent.SetDestination(position);
+        agent.speed = 16f;
+
+        if (runLayerIndex != -1 && baseLayerIndex != -1)
+        {
+            animator.SetLayerWeight(baseLayerIndex, 0f);
+            animator.SetLayerWeight(runLayerIndex, 1f);
+            animator.Play("run2", runLayerIndex);
+        }
+        else
+        {
+            animator.SetBool("run2", true);
         }
     }
 }

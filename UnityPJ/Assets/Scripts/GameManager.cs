@@ -29,9 +29,13 @@ public class GameManager : MonoBehaviour
     public PlayerMove playerControoler;
     public MyCustomCamera CameraControoler;
     private bool isStagetTransitioning = false; // 스테이지 전환 중인지 여부
+    private Rigidbody playerRigidbody;
+    public bool is_subway; // false면 지하철 외부
 
+    public MonsterController monsterController;
     void Start()
     {
+        playerRigidbody = player.GetComponent<Rigidbody>();
         targetOB = GameObject.Find("[ASSETS]/ADS---/SM_wallposter_Rules_01"); // 포스터
         if (targetOB == null)
         {
@@ -58,31 +62,30 @@ public class GameManager : MonoBehaviour
             {
                 fun_strange_situation_exit_train(player);//지하철에서 내릴 때
                 fun_strange_situation_keep_going();//지하철에 계속 타있을 때
+
+
             }
         }
     }
 
+
     void fun_strange_situation_exit_train(GameObject player)//지하철에서 내릴 때
     {
-        //mainCamera.enabled = false;
-        //FixedCamera.enabled = true;
-
-        //FixedCamera.gameObject.SetActive(true);
+        is_subway = false;
+        player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f); //플레이어 위치 고정
+        playerRigidbody.constraints = RigidbodyConstraints.FreezeAll; //플레이어 움직임 고정
         Monster.gameObject.SetActive(true);
         cinemachineVirtualCamera.Priority = 1000; // 우선순위 높여서 활성화
-
-
-
 
         if (player.transform.position.z > 3.5 || player.transform.position.z < -3.5)
         {
             if (subway.is_door_closing == true && strange_situation == false && stage_clear == false)
             {
+
                 Debug.Log("YOU DIE!!!!");
                 if(monsterPrefab != null)
                 {
                     //Instantiate(monsterPrefab, monsterPrefab.transform.position, monsterPrefab.transform.rotation);
-
                 }   
                 //원래위치는 필요없을듯합니다 
                 //player.transform.position = new Vector3(-0.6f, 1.5f, -1.5f); // 내렸으니 원래 위치로 
@@ -91,6 +94,7 @@ public class GameManager : MonoBehaviour
             }
             else if (subway.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
+
                 Debug.Log("CLEAR!!");
                // player.transform.position = new Vector3(-0.6f, 1.5f, -1.5f); // 내렸으니 원래 위치로
                 stage_clear = true; // 다음 스테이지로
@@ -100,9 +104,15 @@ public class GameManager : MonoBehaviour
     }
     void fun_strange_situation_keep_going()//지하철에 계속 타있을 때
     {
+        is_subway = true;
+        player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f); //플레이어 위치 고정
+        playerRigidbody.constraints = RigidbodyConstraints.FreezeAll; //플레이어 움직임 고정
+        Monster.gameObject.SetActive(true);
+
         if (subway.is_door_closing == true && strange_situation == false && stage_clear == false)
         {
             Debug.Log("CLEAR!!");
+
             stage_clear = true; // 다음 스테이지로
             //추가적인 코드 필요
         }
