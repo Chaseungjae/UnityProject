@@ -15,14 +15,14 @@ public class GameManager : MonoBehaviour
     public BackgroundMove Background;
 
     public GameObject monsterPrefab; //잡아먹힐 때 나오는 놈
-    //public GameObject monster_prefabs; // 플레이어에게 다가가는 놈
+    public Canvas blood_effect; // 피 이팩트
     public CinemachineVirtualCamera cinemachineVirtualCamera;
     public Camera mainCamera;
-    public GameObject Monster;
+    public GameObject Monster; // 플레이어한테 다가오는놈
     public MonsterController monsterController;
 
     public PlayerMove playerControoler;
-    public MyCustomCamera CameraControoler;
+    //public MyCustomCamera CameraControoler;
     private bool isStagetTransitioning = false; // 스테이지 전환 중복 방지
 
     //지하철 프리펩 난이도별 구분
@@ -73,72 +73,67 @@ public class GameManager : MonoBehaviour
         
         if (player.transform.position.z > 3.5 || player.transform.position.z < -3.5)
         {
-            is_subway = false;
             // [수정] 이미 전환 중이면(stage_clear == true) 중복 실행 방지
             if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
             {
                 //몬스터 활성화 전 리셋
+                Debug.Log("YOU DIE!!!!");
                 Monster.gameObject.SetActive(true);
                 cinemachineVirtualCamera.Priority = 1000;
-                Debug.Log("YOU DIE!!!!");
-
+                player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
+                player_rb.constraints = RigidbodyConstraints.FreezeAll;
+                is_subway = false;
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = false;
-                player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
-                player_rb.constraints = RigidbodyConstraints.FreezeAll;
-
-                StartCoroutine(DeathAndResetRoutine(15f));
+                StartCoroutine(DeathAndResetRoutine(10f));
             }
             else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
                 Debug.Log("CLEAR!!");
+                Monster.gameObject.SetActive(true);
+                cinemachineVirtualCamera.Priority = 1000;
+                player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
+                player_rb.constraints = RigidbodyConstraints.FreezeAll;
+                is_subway = false;
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = true;
-                player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
-                player_rb.constraints = RigidbodyConstraints.FreezeAll;
-
                 StartCoroutine(DeathAndResetRoutine(10f));
             }
-            
         }
         else
         {
-            is_subway = true;
-
             // 이미 전환 중이면(stage_clear == true) 중복 실행 방지
             if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
             {
                 Debug.Log("CLEAR!!");
+                is_subway = true;
+                Monster.gameObject.SetActive(true);
+                Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
                 FixedCamera_player.Priority = 1000;
-
+                player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
+                player_rb.constraints = RigidbodyConstraints.FreezeAll;
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = true;
-                Monster.gameObject.SetActive(true);
-                player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
-                player_rb.constraints = RigidbodyConstraints.FreezeAll;
-
                 StartCoroutine(DeathAndResetRoutine(10f));
             }
-            else if (in_die_timer < 1.0f && strange_situation == true && stage_clear == false)
+            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
-                //몬스터 활성화 전 리셋
+                Debug.Log("YouDie");
+                is_subway = true;
+                Monster.gameObject.SetActive(true);
+                Debug.Log("65465444444444565656565656565656565656565656565656565656565644444444444");
                 FixedCamera_player.Priority = 1000;
+                player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
+                player_rb.constraints = RigidbodyConstraints.FreezeAll;
                 subway_in_die = true;
                 stage_clear = true;
                 is_success = false;
-                
-                Monster.gameObject.SetActive(true);
-                Debug.Log("YOU DIE!!!!");
                 isStagetTransitioning = true;
-                player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
-                player_rb.constraints = RigidbodyConstraints.FreezeAll;
-
-                StartCoroutine(DeathAndResetRoutine(15f));
+                StartCoroutine(DeathAndResetRoutine(10f));
             }
-            
         }
     }
 
@@ -231,6 +226,20 @@ public class GameManager : MonoBehaviour
         Station.gameObject.SetActive(false);
         Debug.Log("페이드인 시작");
         yield return CanvasM.FadeIn();
+
+        player.transform.position = new Vector3(0.6f, 1.67f, -1.5f); // 플레이어 처음 위치로
+
+        cinemachineVirtualCamera.transform.position = new Vector3(10.48f, 1.591435f, -8f); // 카메라 처음 위치로
+        cinemachineVirtualCamera.transform.rotation = Quaternion.Euler(0, -40.91f, 0f);
+        cinemachineVirtualCamera.Priority = 10;
+
+        FixedCamera_player.transform.position = new Vector3(1.12f, 1.2f, 0.15f); // 카메라 처음 위치로
+        FixedCamera_player.transform.rotation = Quaternion.Euler(0, -180f, 0f);
+        FixedCamera_player.Priority = 11;
+
+        player_rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
+
     }
     private void Awake()
     {
@@ -247,7 +256,11 @@ public class GameManager : MonoBehaviour
         if (obj != null)
         {
             Destroy(obj);
+            blood_effect.gameObject.SetActive(false);
+            // 이거하기전에 페이드인 아웃 하면 될듯
+            // 카메라 처음 위치로
             Debug.Log("삭제");
+            //DeathAndResetRoutine(0.1f);
         }
     }
 }

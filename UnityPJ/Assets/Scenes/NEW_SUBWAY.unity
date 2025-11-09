@@ -4305,7 +4305,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119318023}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!4 &119318029
 Transform:
   m_ObjectHideFlags: 0
@@ -10200,6 +10200,103 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7099516805378160025, guid: f87eed33bc821fe45926fc344fc3952f, type: 3}
   m_PrefabInstance: {fileID: 291774606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &292466943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292466945}
+  - component: {fileID: 292466944}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &292466944
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292466943}
+  m_Enabled: 1
+  serializedVersion: 11
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.7
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &292466945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292466943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: -0.87724733, y: 2.968, z: -11.053973}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &292887595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36145,12 +36242,12 @@ MonoBehaviour:
   player: {fileID: 119318023}
   Background: {fileID: 687103827}
   monsterPrefab: {fileID: 6361611471012225135, guid: d33452ebc99b5374d80410eff04fb646, type: 3}
+  blood_effect: {fileID: 3863332}
   cinemachineVirtualCamera: {fileID: 1888965995}
   mainCamera: {fileID: 1487164810}
   Monster: {fileID: 3375242459942483839}
   monsterController: {fileID: 3375242459942483840}
   playerControoler: {fileID: 119318024}
-  CameraControoler: {fileID: 0}
   strange_situation_1:
   - {fileID: 8705760365550643582, guid: e423d6a9bafe4804096967a7dccabac6, type: 3}
   strange_situation_2:
@@ -53402,7 +53499,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 200
+  m_Priority: 202
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 719498786}
   m_Lens:
@@ -74481,9 +74578,10 @@ MonoBehaviour:
   FixedCamera_player: {fileID: 306580289}
   monsterPrefab: {fileID: 6361611471012225135, guid: d33452ebc99b5374d80410eff04fb646, type: 3}
   canvas: {fileID: 3863329}
+  player: {fileID: 119318023}
   bloodEffectPrefab: {fileID: 8452486636361093024, guid: 320bc0d91a835b848865631e1c7b6ef9, type: 3}
   canvasTransform: {fileID: 0}
-  goToSubway: 1
+  walkSpeed: 3.5
   directMoveSpeed: 5
 --- !u!195 &3375242459942483841
 NavMeshAgent:
@@ -74761,3 +74859,4 @@ SceneRoots:
   - {fileID: 1728111378}
   - {fileID: 571790978}
   - {fileID: 1813927574}
+  - {fileID: 292466945}
