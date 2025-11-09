@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
     public bool is_subway = true;
     public CinemachineVirtualCamera FixedCamera_player;
     private Rigidbody player_rb;
+
+    public bool is_stop = false;
     
 
     // [수정] 사용하지 않는 변수들은 Start()에서 제거 (originalCameraPosition 등)
@@ -53,7 +55,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(Background.target_speed == 0f)
+        is_stop = Background.target_speed == 0f;
+        if (is_stop)
         {
             in_die_timer -= Time.deltaTime;
         }
