@@ -1,9 +1,10 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic; // List/Array 사용
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
-using Cinemachine;
-using TMPro;
+using static System.Collections.Specialized.BitVector32;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,7 +45,11 @@ public class GameManager : MonoBehaviour
     private Rigidbody player_rb;
 
     public bool is_stop = false;
-    
+
+    //스테이지 넘어가는 화면용 
+    public CanvasM CanvasM;
+    public TextMeshProUGUI Station;
+
 
     // [수정] 사용하지 않는 변수들은 Start()에서 제거 (originalCameraPosition 등)
     void Start()
@@ -216,7 +221,16 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log($"연출 대기... ({delay}초)");
         yield return new WaitForSeconds(delay);
+        Debug.Log("페이드아웃");
+        yield return CanvasM.FadeOut();
+        Station.text = "Station: "+ stage_count;
+        Station.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2.0f);
         next_stage();
+        yield return new WaitForSeconds(2.0f);
+        Station.gameObject.SetActive(false);
+        Debug.Log("페이드인 시작");
+        yield return CanvasM.FadeIn();
     }
     private void Awake()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Jobs;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
@@ -45,6 +46,9 @@ public class BackgroundMove : MonoBehaviour
     private Vector3 original_tunnel_position2 = new Vector3(-5f, 0f, 0f);
     public GameManager game_manager;
 
+    public AudioSource moveSound;
+    public AudioSource stopSound;
+    public AudioSource bellSound;
 
     void Update()
     {
@@ -52,7 +56,13 @@ public class BackgroundMove : MonoBehaviour
         if (player_p.transform.position.z > 3.5 || player_p.transform.position.z < -3.5) { player_is_in = false; }
 
         //멈출때 속도 줄이는 부분
-        if (!is_end&&transform.position.x < end_pos+10.0f) { target_speed = 0f; }
+        if (!is_end&&transform.position.x < end_pos+10.0f) { target_speed = 0f; 
+            if (moveSound.isPlaying)
+            {
+                stopSound.Play();
+                moveSound.Stop();
+            }
+        }
         // 현재 속도가 목표 속도와 다른지 확인
         if (!Mathf.Approximately(current_speed, target_speed))
         {
@@ -67,6 +77,10 @@ public class BackgroundMove : MonoBehaviour
         // 이동 중 상태 처리 (속도가 0보다 클 때)
         if (current_speed > 0.001f) // 속도가 0이 아니면 무조건 이동 중
         {
+            if (!moveSound.isPlaying && target_speed != 0f)
+            {
+                moveSound.Play();
+            }
             // 터널 구간인지, 일반 구간인지에 따라 누가 움직일지 결정
             if (transform.position.x <= start_tunnel_posx && move_timer > 0.0f)
             {
@@ -99,6 +113,8 @@ public class BackgroundMove : MonoBehaviour
                     print("open");
                     StartCoroutine(animate_doors_coroutine(true)); //문열림 코루틴 시작
                 }
+                else if (stop_timer < 6.0f&& !bellSound.isPlaying&&stop_timer>5.0f) { bellSound.Play(); }
+
                 else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
                 {
                     print("close");
@@ -107,7 +123,7 @@ public class BackgroundMove : MonoBehaviour
                     if (game_manager.subway_in_die == true)//GameManager의 subway_in_die == true이면 문 안닫음
                     {
                         Debug.Log("not closing");
-                        return;  
+                        return;
                     }
                     StartCoroutine(animate_doors_coroutine(false)); //문닫힘 코루틴 시작
                 }
