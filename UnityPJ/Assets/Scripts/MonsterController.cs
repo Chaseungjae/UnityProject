@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class MonsterController : MonoBehaviour
 {
@@ -32,7 +33,9 @@ public class MonsterController : MonoBehaviour
 
     private NavMeshAgent agent;
     private Animator animator;
-
+    public AudioSource monsterAudioSource;
+    public AudioClip sfxClip;           // Inspector에서 효과음 할당
+    [Range(0f, 1f)] public float volume = 1f;
     // 상태
     private Transform currentTarget;
     private bool isFirstTargetReached = false;
@@ -66,6 +69,7 @@ public class MonsterController : MonoBehaviour
         animator = GetComponent<Animator>();
         background = FindObjectOfType<BackgroundMove>();
         gameManager = FindObjectOfType<GameManager>();
+        monsterAudioSource = GetComponent<AudioSource>();
 
         animator.applyRootMotion = false;
 
@@ -148,6 +152,7 @@ public class MonsterController : MonoBehaviour
             GameManager.Instance.StartCoroutine(GameManager.Instance.DeleteAfterDelay(spawned_b, 2f));
 
             if (canvas != null) canvas.SetActive(true);
+            monsterAudioSource.PlayOneShot(sfxClip, volume);
             spawnedMonster = false;
         }
 
@@ -238,11 +243,30 @@ public class MonsterController : MonoBehaviour
                     {
                         if (gameManager.is_subway)
                         {
-                            StartDirectMove(secondTargetA);
+                            if(gameManager.is_success)
+                            {
+                                //깸
+                                StartDirectMove(secondTargetB);
+                                gameManager.stage_count += 1;
+                            }
+                            else
+                            {
+                                StartDirectMove(secondTargetA);
+                                gameManager.stage_count = 0;
+                            }
                         }
                         else
                         {
-                            StartDirectMove(secondTargetB);
+                            if (gameManager.is_success)
+                            {
+                                StartDirectMove(secondTargetA);
+                                gameManager.stage_count += 1;
+                            }
+                            else
+                            {
+                                StartDirectMove(secondTargetB);
+                                gameManager.stage_count = 0;
+                            }
                         }
                     }
                     else

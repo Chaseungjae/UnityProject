@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public Vector3 playerSpawnPosition = new Vector3(-0.6f, 1.5f, -1.5f); // 플레이어 리스폰 위치
 
-    private int stage_count = 0;
+    public int stage_count = 0;
     private bool is_first_load = true;
     private GameObject current_subway; // '현재' 생성된 지하철 인스턴스
     public bool is_success = false;
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = false;
-                StartCoroutine(DeathAndResetRoutine(10f));
+                StartCoroutine(DeathAndResetRoutine(5f));
             }
             else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = true;
-                StartCoroutine(DeathAndResetRoutine(10f));
+                StartCoroutine(DeathAndResetRoutine(5f));
             }
         }
         else
@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
                 stage_clear = true;
                 isStagetTransitioning = true;
                 is_success = true;
-                StartCoroutine(DeathAndResetRoutine(10f));
+                StartCoroutine(DeathAndResetRoutine(5f));
             }
             else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
@@ -132,7 +132,7 @@ public class GameManager : MonoBehaviour
                 stage_clear = true;
                 is_success = false;
                 isStagetTransitioning = true;
-                StartCoroutine(DeathAndResetRoutine(10f));
+                StartCoroutine(DeathAndResetRoutine(5f));
             }
         }
     }
@@ -207,6 +207,7 @@ public class GameManager : MonoBehaviour
         stage_clear = false;
         isStagetTransitioning = false;
         is_success = false;
+        is_subway = true;
         is_first_load = false; // 첫 로드 완료
         Background.reset_background(); // 새 지하철의 배경 리셋
         player.transform.position = playerSpawnPosition; // 플레이어 위치 리셋
