@@ -6,6 +6,7 @@ public class MyCustomCamera : MonoBehaviour
     public float mouseSensitivity = 300f;
     private float rotationX = 0f;
     private bool isActive = true;
+    public float reversal_mouse = 1.0f;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class MyCustomCamera : MonoBehaviour
 
     private void RotateCamera()
     {
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime * reversal_mouse;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
         // 상하 회전 (CameraRoot 회전)

@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     void fun_strange_situation_exit_or_stay(GameObject player)//지하철에서 내릴 때
     {
         
-        if (player.transform.position.z > 3.5 || player.transform.position.z < -3.5)
+        if (player.transform.position.z > 3.0f || player.transform.position.z < -3.0f)
         {
             // [수정] 이미 전환 중이면(stage_clear == true) 중복 실행 방지
             if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)

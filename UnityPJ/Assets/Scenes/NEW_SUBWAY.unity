@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2a41081926314fb44b0d44bb5d945532, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 4bde1d4f7541e2b4da617e3c9d04eb37, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 5431c0a7516475e4788d9bf12eca4fee, type: 2}
+  m_LightingSettings: {fileID: 616249810}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -497,6 +497,10 @@ PrefabInstance:
       value: Tunnel_Lighted (25)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -591,6 +595,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1057,6 +1065,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1547,6 +1559,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -1727,6 +1743,10 @@ PrefabInstance:
       value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -1865,6 +1885,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2019,6 +2043,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2259,6 +2287,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2487,6 +2519,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2589,6 +2625,10 @@ PrefabInstance:
       value: Tunnel_Lighted (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2617,6 +2657,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2773,6 +2817,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2889,6 +2937,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2965,6 +3017,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3414,6 +3470,10 @@ PrefabInstance:
       value: Wall_Tunnel (34)
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -3821,6 +3881,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -4016,6 +4080,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -4203,6 +4271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.01
+  reversal_move: 1
 --- !u!54 &119318025
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4340,6 +4409,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -4418,6 +4491,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -4494,6 +4571,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4648,6 +4729,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4896,6 +4981,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_Name
       value: Wall_Tunnel (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5393,6 +5482,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -5625,6 +5718,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -5673,6 +5770,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6329,6 +6430,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -6729,6 +6834,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -6851,6 +6960,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7127,6 +7240,10 @@ PrefabInstance:
       value: Tunnel_Lighted (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -7235,6 +7352,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7525,6 +7646,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7883,6 +8008,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -8011,6 +8140,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9255,6 +9388,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -9473,6 +9610,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -9611,6 +9752,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9763,6 +9908,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -9887,6 +10036,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10017,6 +10170,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10356,6 +10513,10 @@ PrefabInstance:
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10806,6 +10967,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11557,6 +11722,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -11789,6 +11958,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12505,6 +12678,10 @@ PrefabInstance:
       value: Tunnel_Lighted (25)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -12611,6 +12788,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -12659,6 +12840,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12967,6 +13152,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -14506,6 +14695,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -15082,6 +15275,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -15438,6 +15635,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -15632,6 +15833,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -15876,6 +16081,10 @@ PrefabInstance:
       value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -15986,6 +16195,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -16034,6 +16247,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16172,6 +16389,10 @@ PrefabInstance:
       value: Wall_Tunnel (33)
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -16240,6 +16461,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16388,6 +16613,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16542,6 +16771,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16744,6 +16977,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -16792,6 +17029,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16870,6 +17111,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17144,6 +17389,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -17846,6 +18095,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18070,6 +18323,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18230,6 +18487,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -18358,6 +18619,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18591,6 +18856,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19097,6 +19366,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -19169,6 +19442,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_Name
       value: Wall_Tunnel (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -19351,6 +19628,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -19438,6 +19719,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7099516805378160025, guid: f87eed33bc821fe45926fc344fc3952f, type: 3}
   m_PrefabInstance: {fileID: 615144121}
   m_PrefabAsset: {fileID: 0}
+--- !u!850595691 &616249810
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Lighting Settings
+  serializedVersion: 9
+  m_EnableBakedLightmaps: 1
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_LightmapSizeFixed: 0
+  m_UseMipmapLimits: 1
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_LightmapCompression: 3
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_EnableWorkerProcessBaking: 1
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 256
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentImportanceSampling: 1
+  m_PVRFilteringMode: 1
+  m_PVRDenoiserTypeDirect: 1
+  m_PVRDenoiserTypeIndirect: 1
+  m_PVRDenoiserTypeAO: 1
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 1
+  m_PVRFilteringGaussRadiusAO: 1
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_RespectSceneVisibilityWhenBakingGI: 0
 --- !u!1001 &617967913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19837,6 +20179,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -19989,6 +20335,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20197,6 +20547,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -20347,6 +20701,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20660,6 +21018,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -20964,6 +21326,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22086,6 +22452,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -22228,6 +22598,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22382,6 +22756,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -22910,6 +23288,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -23019,6 +23401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 119318029}
   mouseSensitivity: 170
+  reversal_mouse: 1
 --- !u!114 &719498788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23598,6 +23981,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -24156,6 +24543,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25084,6 +25475,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -25286,6 +25681,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25578,6 +25977,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -25708,6 +26111,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25862,6 +26269,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26383,6 +26794,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27125,6 +27540,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28039,6 +28458,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -28235,6 +28658,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -28361,6 +28788,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28734,6 +29165,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -28884,6 +29319,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29856,6 +30295,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -30132,6 +30575,10 @@ PrefabInstance:
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -30898,6 +31345,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -30942,6 +31393,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_Name
       value: Wall_Tunnel (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31252,6 +31707,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -31920,6 +32379,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -32114,6 +32577,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33429,6 +33896,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -33955,6 +34426,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34486,6 +34961,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -34534,6 +35013,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -34612,6 +35095,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35318,6 +35805,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -35456,6 +35947,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35834,6 +36329,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -36174,6 +36673,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -36304,6 +36807,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -36379,11 +36886,14 @@ MonoBehaviour:
   playerControoler: {fileID: 119318024}
   strange_situation_1:
   - {fileID: 8705760365550643582, guid: e423d6a9bafe4804096967a7dccabac6, type: 3}
+  - {fileID: 8705760365550643582, guid: 7eb45725a8cb3a841b72c42d77b57805, type: 3}
   strange_situation_2:
   - {fileID: 8705760365550643582, guid: 876ab78a7af3d5f4b87e73c893154101, type: 3}
+  - {fileID: 8705760365550643582, guid: b3e932c008b8d2f44a2c1eb163f720f9, type: 3}
   strange_situation_3:
   - {fileID: 8705760365550643582, guid: e544863443e8b2940919292ec40ad566, type: 3}
-  normal_stage: {fileID: 8705760365550643582, guid: dafa449df8b1b8341a8397a6922f209a, type: 3}
+  - {fileID: 8705760365550643582, guid: 18c31bee0a896ed428bd2fb8b6046719, type: 3}
+  normal_stage: {fileID: 8705760365550643582, guid: 8ae78421eea41dc44898e74f841ab174, type: 3}
   playerSpawnPosition: {x: -0.6, y: 1.5, z: -1.5}
   stage_count: 0
   is_success: 0
@@ -37205,6 +37715,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -37479,6 +37993,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37957,6 +38475,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -38566,6 +39088,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -39157,6 +39683,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -39313,6 +39843,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40629,6 +41163,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -41031,6 +41569,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -41310,6 +41852,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -41544,6 +42090,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -41898,6 +42448,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -42160,6 +42714,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -42338,6 +42896,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42772,6 +43334,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -42992,6 +43558,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -43181,6 +43751,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -43257,6 +43831,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -43661,6 +44239,10 @@ PrefabInstance:
       value: Tunnel_Lighted (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -43985,6 +44567,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -45352,6 +45938,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -45550,6 +46140,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47215,6 +47809,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -47263,6 +47861,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47407,6 +48009,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47631,6 +48237,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -47759,6 +48369,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -47963,6 +48577,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -48035,6 +48653,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -48165,6 +48787,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -48563,6 +49189,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -49277,6 +49907,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -49897,6 +50531,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_End
+      objectReference: {fileID: 0}
+    - target: {fileID: 8832013508331596538, guid: 800ae537a2df4b443bc8099c43b21e8a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -50005,6 +50643,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -50706,6 +51348,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -51240,6 +51886,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -51964,6 +52614,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -52380,6 +53034,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -53188,6 +53846,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -53592,7 +54254,7 @@ GameObject:
   - component: {fileID: 1728675351}
   m_Layer: 0
   m_Name: VirtualCamera
-  m_TagString: Untagged
+  m_TagString: PlayerCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54476,6 +55138,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -54768,6 +55434,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -54922,6 +55592,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -55048,6 +55722,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -55852,6 +56530,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -56274,6 +56956,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -56546,6 +57232,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -56698,6 +57388,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -56886,6 +57580,10 @@ PrefabInstance:
       value: Wall_Tunnel (32)
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -56954,6 +57652,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -57032,6 +57734,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -57501,6 +58207,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -57953,6 +58663,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_Name
       value: Tunnel_Lighted (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -58867,6 +59581,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -59354,6 +60072,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_Name
       value: Wall_Tunnel (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -60024,6 +60746,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -60354,6 +61080,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -60562,6 +61292,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -60850,6 +61584,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -60898,6 +61636,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -61210,6 +61952,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -63310,6 +64056,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -63744,6 +64494,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -64472,6 +65226,10 @@ PrefabInstance:
       value: Tunnel_Lighted (15)
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -64666,6 +65424,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -65246,6 +66008,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -65608,6 +66374,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -66149,6 +66919,10 @@ PrefabInstance:
       value: Wall_Tunnel (7)
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -66359,6 +67133,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -66529,6 +67307,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -66819,6 +67601,10 @@ PrefabInstance:
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -67925,6 +68711,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
+      propertyPath: m_TagString
+      value: Tunnel_Lighted
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994895668540004627, guid: bcce8e481351d27449474de6ecadb255, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -68043,6 +68833,10 @@ PrefabInstance:
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
+      propertyPath: m_TagString
+      value: Wall_Tunnel
       objectReference: {fileID: 0}
     - target: {fileID: 2677863498428837629, guid: 30c8e6d6b0787ce4ca0094dd0d719c0f, type: 3}
       propertyPath: m_StaticEditorFlags

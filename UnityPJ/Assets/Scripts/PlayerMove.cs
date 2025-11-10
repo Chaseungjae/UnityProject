@@ -5,6 +5,7 @@ public class PlayerMove : MonoBehaviour
     public float Speed = 5f;
     private Rigidbody playerRB;
     private bool isActive = true;
+    public float reversal_move = 1.0f;
 
     void Start()
     {
@@ -24,7 +25,7 @@ public class PlayerMove : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 move = (transform.forward * vertical + transform.right * horizontal);
+        Vector3 move = (transform.forward * vertical * reversal_move  + transform.right * horizontal * reversal_move);
         playerRB.MovePosition(transform.position + move * Speed * Time.deltaTime);
     }
 

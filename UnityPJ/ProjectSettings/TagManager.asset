@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - PlayerCamera
+  - Tunnel_Lighted
+  - Wall_Tunnel
+  - Tunnel_End
   layers:
   - Default
   - TransparentFX
