@@ -3,12 +3,29 @@
   "WorkspaceRootPath": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\mycustomcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mycustomcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\subway_ksw_door_tril.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\subway_ksw_door_tril.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\subway_ksw_mute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\subway_ksw_mute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -21,6 +38,7 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+<<<<<<< Updated upstream
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PlayerMove.cs",
@@ -31,10 +49,44 @@
               "ViewState": "AgIAAA4AAAAAAAAAAADwvwgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T07:43:20.156Z",
-              "EditorCaption": ""
+=======
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Subway_ksw_mute.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway_ksw_mute.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Subway_ksw_mute.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway_ksw_mute.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Subway_ksw_mute.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:21:12.377Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "subway_ksw_door_tril.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\subway_ksw_door_tril.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\subway_ksw_door_tril.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\subway_ksw_door_tril.cs",
+              "RelativeToolTip": "Assets\\Scripts\\subway_ksw_door_tril.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T12:53:08.165Z",
+>>>>>>> Stashed changes
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "MyCustomCamera.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MyCustomCamera.cs",
@@ -49,6 +101,29 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+=======
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:25:22.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BackgroundMove.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroundMove.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BackgroundMove.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwHgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T07:18:10.004Z"
+>>>>>>> Stashed changes
             }
           ]
         }
