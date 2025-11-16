@@ -3,7 +3,7 @@ using UnityEngine.InputSystem.Controls;
 using System.Collections;
 using UnityEditor.Build.Content;
 
-public class subway_2_door_tril : MonoBehaviour
+public class subway_ksw_door_tril : MonoBehaviour
 {
     public GameObject[] door_left;
     public GameObject[] door_right;

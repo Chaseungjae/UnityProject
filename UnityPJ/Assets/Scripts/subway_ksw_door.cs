@@ -3,7 +3,7 @@ using UnityEngine.InputSystem.Controls;
 using System.Collections;
 using UnityEditor.Build.Content;
 
-public class subway_2_door : MonoBehaviour
+public class subway_ksw_door : MonoBehaviour
 {
     public GameObject[] door_left;
     public GameObject[] door_right;
@@ -19,8 +19,10 @@ public class subway_2_door : MonoBehaviour
     private float timer = 5f;
 
     public GameObject cude;
+    public AudioSource[] boor_open;
     void Start()
     {
+        GameManager.Instance.Background.is_door_sound = false;
         left_door_closed_pos = new Vector3[door_left.Length];
         for (int i = 0; i < door_left.Length; i++)
         {
@@ -43,6 +45,10 @@ public class subway_2_door : MonoBehaviour
         {
             is_open= true; 
             Debug.Log("open"); 
+            for(int i=0;i< boor_open.Length; i++)
+            {
+                boor_open[i].Play();
+            }
             StartCoroutine(animate_doors_coroutine(true));
         }
 

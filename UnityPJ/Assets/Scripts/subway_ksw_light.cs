@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class subway_1_light : MonoBehaviour
+public class subway_ksw_light : MonoBehaviour
 {
     [Header("--- 깜박임 속도 (무작위) ---")]
     [Tooltip("조명이 켜져있는 최소 시간")]

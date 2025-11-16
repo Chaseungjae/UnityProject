@@ -49,6 +49,11 @@ public class BackgroundMove : MonoBehaviour
     public AudioSource moveSound;
     public AudioSource stopSound;
     public AudioSource bellSound;
+    public AudioSource announcement;
+    public AudioSource[] door_open;
+
+    public bool is_sound = true;
+    public bool is_door_sound = true;
 
     void Update()
     {
@@ -77,7 +82,7 @@ public class BackgroundMove : MonoBehaviour
         // 이동 중 상태 처리 (속도가 0보다 클 때)
         if (current_speed > 0.001f) // 속도가 0이 아니면 무조건 이동 중
         {
-            if (!moveSound.isPlaying && target_speed != 0f)
+            if (!moveSound.isPlaying && target_speed != 0f&& is_sound)
             {
                 moveSound.Play();
             }
@@ -91,6 +96,7 @@ public class BackgroundMove : MonoBehaviour
                 {
                     tunnel.transform.position = new Vector3(tunnel_reset_pos, 0, 0);
                 }
+                if (move_timer < 1.0f && is_sound) announcement.Play();
             }
             else
             {
@@ -111,6 +117,10 @@ public class BackgroundMove : MonoBehaviour
                     is_door_open = true;
                     is_door_closing = false;
                     print("open");
+                    for (int i = 0; i < 3; i++)
+                    {
+                        if(is_door_sound)door_open[i].Play();
+                    }
                     StartCoroutine(animate_doors_coroutine(true)); //문열림 코루틴 시작
                 }
                 else if (stop_timer < 6.0f&& !bellSound.isPlaying&&stop_timer>5.0f) { bellSound.Play(); }
@@ -203,6 +213,7 @@ public class BackgroundMove : MonoBehaviour
         is_door_open = false;
         is_door_closing = false; 
         player_is_in = true;    //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
+        is_door_sound = true;
 
         left_door_closed_pos = new Vector3[door_left.Length];
         for (int i = 0; i < door_left.Length; i++)
