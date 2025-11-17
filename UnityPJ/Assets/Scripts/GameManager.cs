@@ -50,8 +50,11 @@ public class GameManager : MonoBehaviour
     public CanvasM CanvasM;
     public TextMeshProUGUI Station;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
 
-    // [수정] 사용하지 않는 변수들은 Start()에서 제거 (originalCameraPosition 등)
     void Start()
     {
         player_rb = player.GetComponent<Rigidbody>();
@@ -60,14 +63,18 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        UpdateTimer();
+        fun_strange_situation_exit_or_stay(player);
+    }
+    // 타이머 업데이트
+    private void UpdateTimer()
+    {
         is_stop = Background.target_speed == 0f;
         if (is_stop)
         {
             in_die_timer -= Time.deltaTime;
         }
-        fun_strange_situation_exit_or_stay(player);
     }
-
     void fun_strange_situation_exit_or_stay(GameObject player)//지하철에서 내릴 때
     {
         
@@ -242,10 +249,7 @@ public class GameManager : MonoBehaviour
 
 
     }
-    private void Awake()
-    {
-        Instance = this;
-    }
+    
     public IEnumerator DeleteAfterDelay(GameObject obj, float delay)//플레이어 놀래키는 몬스터 delay 후에 삭제
     {
         Debug.Log("코루틴 발동");

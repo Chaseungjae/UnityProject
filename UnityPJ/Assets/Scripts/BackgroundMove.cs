@@ -8,9 +8,9 @@ using UnityEngine.UIElements;
 
 public class BackgroundMove : MonoBehaviour
 {
-    public float max_speed = 5.0f; // 지하철의 최대 속도
-    public float acceleration_time = 1.5f; // 최대 속도까지 도달하는 데 걸리는 시간 (초)
-    public float deceleration_time = 1.0f; // 멈추는 데 걸리는 시간 (초)
+    private float max_speed = 5.0f; // 지하철의 최대 속도
+    private float acceleration_time = 1.5f; // 최대 속도까지 도달하는 데 걸리는 시간 (초)
+    private float deceleration_time = 1.0f; // 멈추는 데 걸리는 시간 (초)
 
     private float current_speed = 0.0f; // 현재 속도
     public float target_speed = 0.0f;  // 목표 속도 //GameManager에게 값 전달을 위해 public으로 변경
@@ -27,7 +27,7 @@ public class BackgroundMove : MonoBehaviour
     public GameObject[] door_left; // 문 배열 
     public GameObject[] door_right; // 문 배열
     private float door_animation_time = 1.0f; //문열림 시간  
-    public float door_open_pos = 0.7f; // 문 열림 포지션 차이 
+    private float door_open_pos = 0.7f; // 문 열림 포지션 차이 
     private Vector3[] left_door_closed_pos;  // 왼쪽 문들의 닫힌 위치 저장
     private Vector3[] right_door_closed_pos; // 오른쪽 문들의 닫힌 위치 저장
     public bool is_door_open = false; //문 열림 닫힘 상태 저장
@@ -54,42 +54,75 @@ public class BackgroundMove : MonoBehaviour
 
     public bool is_sound = true;
     public bool is_door_sound = true;
-
+    
     void Update()
     {
         //플레이어가 내렸는지 판별 
-        if (player_p.transform.position.z > 3.5 || player_p.transform.position.z < -3.5) { player_is_in = false; }
+        CheckPlayerStatus();
+        //속도 계산 제어
+        UpdateSpeed();
 
-        //멈출때 속도 줄이는 부분
-        if (!is_end&&transform.position.x < end_pos+10.0f) { target_speed = 0f; 
+        // 이동 중 상태 처리 (속도가 0보다 클 때)
+        if (current_speed > 0.001f) // 속도가 0이 아니면 무조건 이동 중
+        {
+            HandleMovement();
+        }
+        // 정지 상태 처리 (속도가 0일 때)
+        else
+        {
+            // 속도가 0일 때, 우리가 멈춘 것인지(target_speed == 0) 확인
+            // (게임 시작 시 speed 0 상태와 구분하기 위함)
+            if (target_speed == 0f)
+            {
+                HandleStationSequence();
+            }
+        }
+    }
+    
+    //플레이어 내렸는지 
+    private void CheckPlayerStatus()
+    {
+        if (player_p.transform.position.z > 3.5 || player_p.transform.position.z < -3.5) { player_is_in = false; }
+    }
+    //속도 관련 계산 처리
+    private void UpdateSpeed()
+    {
+        // //멈출때 속도 줄이는 부분
+        if (!is_end && transform.position.x < end_pos + 10.0f)
+        {
+            target_speed = 0f;
             if (moveSound.isPlaying)
             {
                 stopSound.Play();
                 moveSound.Stop();
             }
         }
-        // 현재 속도가 목표 속도와 다른지 확인
+
+        // // 현재 속도가 목표 속도와 다른지 확인
         if (!Mathf.Approximately(current_speed, target_speed))
         {
             float smooth_time = (target_speed > 0) ? acceleration_time : deceleration_time;
             current_speed = Mathf.SmoothDamp(
                 current_speed,     // 현재 값
                 target_speed,      // 목표 값
-                ref velocity,     // 현재 속도 (참조로 전달)
+                ref velocity,      // 현재 속도 (참조로 전달)
                 smooth_time        // 목표 도달까지 걸리는 시간
             );
         }
-        // 이동 중 상태 처리 (속도가 0보다 클 때)
-        if (current_speed > 0.001f) // 속도가 0이 아니면 무조건 이동 중
+    }
+    //움직임 처리
+    private void HandleMovement()
+    {
+        if (current_speed > 0.001f) // // 속도가 0이 아니면 무조건 이동 중
         {
-            if (!moveSound.isPlaying && target_speed != 0f&& is_sound)
+            if (!moveSound.isPlaying && target_speed != 0f && is_sound)
             {
                 moveSound.Play();
             }
-            // 터널 구간인지, 일반 구간인지에 따라 누가 움직일지 결정
+            // // 터널 구간인지, 일반 구간인지에 따라 누가 움직일지 결정
             if (transform.position.x <= start_tunnel_posx && move_timer > 0.0f)
             {
-                // 터널 구간: 터널을 움직임
+                // // 터널 구간: 터널을 움직임
                 move_timer -= Time.deltaTime;
                 tunnel.transform.Translate(Vector3.left * current_speed * Time.deltaTime);
                 if (tunnel.transform.position.x <= tunnel_check_pos)
@@ -100,53 +133,61 @@ public class BackgroundMove : MonoBehaviour
             }
             else
             {
-                // 일반 구간 배경(자신)을 움직임
+                // // 일반 구간 배경(자신)을 움직임
                 transform.Translate(Vector3.right * -current_speed * Time.deltaTime);
             }
         }
-        // 정지 상태 처리 (속도가 0일 때)
-        else
-        {
-            // 속도가 0일 때, 우리가 멈춘 것인지(target_speed == 0) 확인
-            // (게임 시작 시 speed 0 상태와 구분하기 위함)
-            if (target_speed == 0f)
-            {
-                stop_timer -= Time.deltaTime;
-                if (stop_timer > 0.0f && !is_door_open && !is_door_closing)
-                {
-                    is_door_open = true;
-                    is_door_closing = false;
-                    print("open");
-                    for (int i = 0; i < 3; i++)
-                    {
-                        if(is_door_sound)door_open[i].Play();
-                    }
-                    StartCoroutine(animate_doors_coroutine(true)); //문열림 코루틴 시작
-                }
-                else if (stop_timer < 6.0f&& !bellSound.isPlaying&&stop_timer>5.0f) { bellSound.Play(); }
+    }
+    //정차시 처리
+    private void HandleStationSequence()
+    {
+        stop_timer -= Time.deltaTime;
 
-                else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
-                {
-                    print("close");
-                    is_door_closing = true;
-                    is_door_open = false;
-                    if (game_manager.subway_in_die == true)//GameManager의 subway_in_die == true이면 문 안닫음
-                    {
-                        Debug.Log("not closing");
-                        return;
-                    }
-                    StartCoroutine(animate_doors_coroutine(false)); //문닫힘 코루틴 시작
-                }
-                /*
-                // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때, 플레이어가 타고있을때)
-                if (stop_timer < 0.0f && is_door_closing&& player_is_in)
-                {
-                    print("dd");
-                    is_end=true; 
-                    target_speed = max_speed;
-                }*/
-            }
+        if (stop_timer > 0.0f && !is_door_open && !is_door_closing)
+        {
+            OpenDoors();
         }
+        else if (stop_timer < 6.0f && !bellSound.isPlaying && stop_timer > 5.0f)
+        {
+            bellSound.Play();
+        }
+        else if (stop_timer < 1.0f && is_door_open && !is_door_closing)
+        {
+            CloseDoors();
+        }
+        /*
+        // 다시 출발 (타이머 0되고, 문 닫힘이 끝났을 때, 플레이어가 타고있을때)
+        if (stop_timer < 0.0f && is_door_closing&& player_is_in)
+        {
+            print("dd");
+            is_end=true; 
+            target_speed = max_speed;
+        }*/
+    }
+    // 문 열기 로직
+    private void OpenDoors()
+    {
+        is_door_open = true;
+        is_door_closing = false;
+        print("open");
+        for (int i = 0; i < 3; i++) // 기존 반복문 유지 (door_open 배열 크기에 맞춰 조정 권장)
+        {
+            if (is_door_sound) door_open[i].Play();
+        }
+        StartCoroutine(animate_doors_coroutine(true)); // //문열림 코루틴 시작
+    }
+    // 문 닫기 로직
+    private void CloseDoors()
+    {
+        print("close");
+        is_door_closing = true;
+        is_door_open = false;
+        if (game_manager.subway_in_die == true)// //GameManager의 subway_in_die == true이면 문 안닫음
+        {
+            Debug.Log("not closing");
+            return;
+        }
+        StartCoroutine(animate_doors_coroutine(false)); // //문닫힘 코루틴 시작
     }
 
     //문열림 함수
@@ -194,6 +235,7 @@ public class BackgroundMove : MonoBehaviour
             door_right[i].transform.position = rightTargetPositions[i];
         }
     }
+    //리셋 함수 
     public void reset_background()
     {
         Debug.Log("Resetting BackgroundMove state");
@@ -211,7 +253,7 @@ public class BackgroundMove : MonoBehaviour
         stop_timer = 12.0f;
         // 상태 변수 리셋
         is_door_open = false;
-        is_door_closing = false; 
+        is_door_closing = false;
         player_is_in = true;    //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
         is_door_sound = true;
 

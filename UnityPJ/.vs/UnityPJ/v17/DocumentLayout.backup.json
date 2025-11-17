@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\",
+  "WorkspaceRootPath": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\chaseungjae\\desktop\\unity3dpj\\unityproject\\unitypj\\assets\\eye advanced\\scripts\\eyeadv_autodilation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\eye advanced\\scripts\\eyeadv_autodilation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backgroundmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\assets\\scripts\\meterials_scripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\meterials_scripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\subway full package\\cinemachine\\base\\runtime\\core\\noisesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\subway full package\\cinemachine\\base\\runtime\\core\\noisesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\eyescontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\eyescontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\eye advanced\\scripts\\eyeadv_autodilation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\eye advanced\\scripts\\eyeadv_autodilation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\meterials_scripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\meterials_scripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,50 +51,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EyeAdv_AutoDilation.cs",
-              "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
-              "RelativeDocumentMoniker": "Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
-              "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
-              "RelativeToolTip": "Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "BackgroundMove.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroundMove.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BackgroundMove.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAAO0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T13:08:55.1Z",
+              "WhenOpened": "2025-11-17T02:33:14.742Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Meterials_Scripts.cs",
-              "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\Meterials_Scripts.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Meterials_Scripts.cs",
-              "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\Meterials_Scripts.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Meterials_Scripts.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAqwDEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T10:37:58.198Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "NoiseSettings.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Subway Full Package\\Cinemachine\\Base\\Runtime\\Core\\NoiseSettings.cs",
+              "RelativeDocumentMoniker": "Assets\\Subway Full Package\\Cinemachine\\Base\\Runtime\\Core\\NoiseSettings.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Subway Full Package\\Cinemachine\\Base\\Runtime\\Core\\NoiseSettings.cs",
+              "RelativeToolTip": "Assets\\Subway Full Package\\Cinemachine\\Base\\Runtime\\Core\\NoiseSettings.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwCYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:59:59.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerMove.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\PlayerMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwDcAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:55:48.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EyesContact.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\EyesContact.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EyesContact.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\EyesContact.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EyesContact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:19:34.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EyeAdv_AutoDilation.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
+              "RelativeDocumentMoniker": "Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
+              "RelativeToolTip": "Assets\\EYE ADVANCED\\Scripts\\EyeAdv_AutoDilation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T13:08:55.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Meterials_Scripts.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Meterials_Scripts.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Meterials_Scripts.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Meterials_Scripts.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Meterials_Scripts.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAqwDEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T10:37:58.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAD4v4UAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T10:22:12.495Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MonsterController.cs",
-              "DocumentMoniker": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MonsterController.cs",
-              "ToolTip": "C:\\Users\\Chaseungjae\\Desktop\\Unity3DPJ\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\MonsterController.cs",
-              "ViewState": "AgIAAE4BAAAAAAAAAAD4v8UAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAEABAAAAAAAAAADgv8UAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T10:20:10.041Z"
             }
