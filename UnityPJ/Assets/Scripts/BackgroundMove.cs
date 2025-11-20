@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -49,6 +50,7 @@ public class BackgroundMove : MonoBehaviour
     public AudioSource moveSound;
     public AudioSource stopSound;
     public AudioSource bellSound;
+    public AudioClip[] audioClips;
     public AudioSource announcement;
     public AudioSource[] door_open;
 
@@ -129,7 +131,7 @@ public class BackgroundMove : MonoBehaviour
                 {
                     tunnel.transform.position = new Vector3(tunnel_reset_pos, 0, 0);
                 }
-                if (move_timer < 1.0f && is_sound) announcement.Play();
+                if (move_timer < 10.0f && is_sound) announcement.Play();
             }
             else
             {
@@ -268,5 +270,7 @@ public class BackgroundMove : MonoBehaviour
         {
             right_door_closed_pos[i] = door_right[i].transform.position;
         }
+        announcement.clip = audioClips[game_manager.stage_count];
+        Debug.Log(game_manager.stage_count);
     }
 }

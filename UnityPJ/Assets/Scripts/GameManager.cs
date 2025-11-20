@@ -26,9 +26,7 @@ public class GameManager : MonoBehaviour
     private bool isStagetTransitioning = false; // 스테이지 전환 중복 방지
 
     //지하철 프리펩 난이도별 구분
-    public GameObject[] strange_situation_1;
-    public GameObject[] strange_situation_2;
-    public GameObject[] strange_situation_3;
+    public GameObject[] strange_situation_array; // 13 까지가 이지 다음부터 하드 
     public GameObject normal_stage;
 
     public Vector3 playerSpawnPosition = new Vector3(-0.6f, 1.5f, -1.5f); // 플레이어 리스폰 위치
@@ -44,11 +42,14 @@ public class GameManager : MonoBehaviour
     public CinemachineVirtualCamera FixedCamera_player;
     private Rigidbody player_rb;
 
+    private int[] duplication=new int[10]; // 중복 체크용
+
     public bool is_stop = false;
 
     //스테이지 넘어가는 화면용 
     public CanvasM CanvasM;
     public TextMeshProUGUI Station;
+
 
     private void Awake()
     {
@@ -57,6 +58,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        for (int i = 0; i < 10; i++)
+        {
+            duplication[i] = -1;
+        }
         player_rb = player.GetComponent<Rigidbody>();
         next_stage();
     }
@@ -92,13 +97,18 @@ public class GameManager : MonoBehaviour
                 is_subway = false;
                 stage_clear = true;
                 isStagetTransitioning = true;
-                is_success = false;
+                is_success = false; 
+                for (int i = 0; i < 10; i++)
+                {
+                    duplication[i] = -1;
+                }
                 StartCoroutine(DeathAndResetRoutine(5f));
             }
             else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
                 Debug.Log("CLEAR!!");
                 Monster.gameObject.SetActive(true);
+                stage_count++;
                 cinemachineVirtualCamera.Priority = 1000;
                 player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
                 player_rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -116,6 +126,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("CLEAR!!");
                 is_subway = true;
+                stage_count++;
                 Monster.gameObject.SetActive(true);
                 Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
                 FixedCamera_player.Priority = 1000;
@@ -139,6 +150,10 @@ public class GameManager : MonoBehaviour
                 stage_clear = true;
                 is_success = false;
                 isStagetTransitioning = true;
+                for (int i = 0; i < 10; i++)
+                {
+                    duplication[i] = -1;
+                }
                 StartCoroutine(DeathAndResetRoutine(5f));
             }
         }
@@ -151,19 +166,14 @@ public class GameManager : MonoBehaviour
         // 모든 연출을 리셋
         Monster.gameObject.SetActive(false);
         cinemachineVirtualCamera.Priority = 10;
-        // monsterController.ResetMonster(); // 몬스터 컨트롤러 내부 상태도 리셋
-
         if (!is_first_load && current_subway != null)
         {
             Destroy(current_subway);
         }
-
-
         // 스폰할 프리팹 결정 
         GameObject prefab_spawn;
         float random = Random.value;
-
-        if (random < 0.4f || is_first_load)
+        if (random < 0.35f || is_first_load)
         {
             strange_situation = false;
             prefab_spawn = normal_stage;
@@ -171,41 +181,35 @@ public class GameManager : MonoBehaviour
         else
         {
             strange_situation = true;
-            if (stage_count < 4)
+            random = Random.value;
+            int prefab_idx=-1;
+            if (random < 0.4f) //발견쉬운거 40%
             {
-                Debug.Log("~2: lv 1");
-                prefab_spawn = strange_situation_1[Random.Range(0, strange_situation_1.Length)];
-            }
-            else if (stage_count < 6)
-            {
-                float levelChance = Random.value;
-                if (levelChance < 0.3f)
-                {
-                    Debug.Log("2~4: lv 1");
-                    prefab_spawn = strange_situation_1[Random.Range(0, strange_situation_1.Length)];
-                }
-                else
-                {
-                    Debug.Log("2~4: lv 2");
-                    prefab_spawn = strange_situation_2[Random.Range(0, strange_situation_2.Length)];
+                bool go = false;
+                while (!go) {
+                    go = true;
+                    prefab_idx = Random.Range(0, 14);
+                    for (int i = 0; i < stage_count; i++)
+                    {
+                        if (duplication[i] == prefab_idx) go = false; 
+                    }
                 }
             }
-            else
+            else //발견어려운거 60%
             {
-                float levelChance = Random.value;
-                if (levelChance < 0.5f)
+                bool go = false;
+                while (!go)
                 {
-                    Debug.Log("5~: lv 2");
-                    prefab_spawn = strange_situation_2[Random.Range(0, strange_situation_2.Length)];
-                }
-                else
-                {
-                    Debug.Log("5~: lv 3");
-                    prefab_spawn = strange_situation_3[Random.Range(0, strange_situation_3.Length)];
+                    go = true;
+                    prefab_idx = Random.Range(13, strange_situation_array.Length);
+                    for (int i = 0; i < stage_count; i++)
+                    {
+                        if (duplication[i] == prefab_idx) go = false;
+                    }
                 }
             }
+            prefab_spawn = strange_situation_array[prefab_idx];
         }
-
         current_subway = Instantiate(prefab_spawn, new Vector3(0, 0, 0), prefab_spawn.transform.rotation);
         var new_subway = current_subway.GetComponent<Subway>();
         Background.door_left = new_subway.door_left;
