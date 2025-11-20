@@ -257,9 +257,10 @@ public class BackgroundMove : MonoBehaviour
         is_door_open = false;
         is_door_closing = false;
         player_is_in = true;    //시작시 목표 속도 변수 초기화하면서 움직이게 하는 구문 
+        is_sound = true;
         is_door_sound = true;
 
-        left_door_closed_pos = new Vector3[door_left.Length];
+    left_door_closed_pos = new Vector3[door_left.Length];
         for (int i = 0; i < door_left.Length; i++)
         {
             left_door_closed_pos[i] = door_left[i].transform.position;
