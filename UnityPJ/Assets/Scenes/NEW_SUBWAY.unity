@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37134,7 +37134,7 @@ MonoBehaviour:
   - {fileID: 8705760365550643582, guid: 496ea66387470144b8ebd8dc96b33492, type: 3}
   - {fileID: 8705760365550643582, guid: 83789ebf084201a4d86a0adca7e2d8cf, type: 3}
   - {fileID: 8705760365550643582, guid: 1118645efca8e16418a88db5697bfd0c, type: 3}
-  normal_stage: {fileID: 8705760365550643582, guid: b3e932c008b8d2f44a2c1eb163f720f9, type: 3}
+  normal_stage: {fileID: 8705760365550643582, guid: 8ae78421eea41dc44898e74f841ab174, type: 3}
   playerSpawnPosition: {x: -0.6, y: 1.5, z: -1.5}
   stage_count: 0
   is_success: 0
