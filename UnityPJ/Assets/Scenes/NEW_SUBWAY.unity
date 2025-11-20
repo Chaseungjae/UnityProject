@@ -37134,7 +37134,7 @@ MonoBehaviour:
   - {fileID: 8705760365550643582, guid: 496ea66387470144b8ebd8dc96b33492, type: 3}
   - {fileID: 8705760365550643582, guid: 83789ebf084201a4d86a0adca7e2d8cf, type: 3}
   - {fileID: 8705760365550643582, guid: 1118645efca8e16418a88db5697bfd0c, type: 3}
-  normal_stage: {fileID: 8705760365550643582, guid: b3e932c008b8d2f44a2c1eb163f720f9, type: 3}
+  normal_stage: {fileID: 8705760365550643582, guid: 18c31bee0a896ed428bd2fb8b6046719, type: 3}
   playerSpawnPosition: {x: -0.6, y: 1.5, z: -1.5}
   stage_count: 0
   is_success: 0

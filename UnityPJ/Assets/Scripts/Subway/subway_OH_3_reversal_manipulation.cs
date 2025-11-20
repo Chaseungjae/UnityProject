@@ -27,4 +27,18 @@ public class subway_OH_reversal_manipulation : MonoBehaviour
     {
         
     }
+
+    void OnDestroy()
+    {
+        reversal_vertical.m_VerticalAxis.m_InvertAxis = true;
+        playermove.reversal_move = 1.0f;
+        mycamera.reversal_mouse = 1.0f;
+
+    }
+    void OnApplicationQuit()
+    {
+        reversal_vertical.m_VerticalAxis.m_InvertAxis = true;
+        playermove.reversal_move = 1.0f;
+        mycamera.reversal_mouse = 1.0f;
+    }
 }
