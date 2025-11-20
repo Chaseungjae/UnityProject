@@ -4,7 +4,7 @@ using System.Collections;
 
 public class subway_OH_2_subwayoutside : MonoBehaviour
 {
-    public Material skyboxMaterial;
+    public Material newskybox;
     public float transparency = 0f;
     public Material targetMaterial;
     private Shader originalShader;
@@ -40,6 +40,8 @@ public class subway_OH_2_subwayoutside : MonoBehaviour
         originalShader = targetMaterial.shader;
         Shader standardShader = Shader.Find("Standard");
         targetMaterial.shader = standardShader;
+
+        RenderSettings.skybox = newskybox;
     }
 
     // Update is called once per frame
@@ -60,6 +62,8 @@ public class subway_OH_2_subwayoutside : MonoBehaviour
 
         foreach (var obj in tunnelendObjects)
             if (obj != null) obj.SetActive(true);
+
+        RenderSettings.skybox = null;
     }
     void OnApplicationQuit()
     {
@@ -72,6 +76,8 @@ public class subway_OH_2_subwayoutside : MonoBehaviour
         foreach (var obj in tunnelendObjects)
 
             if (obj != null) obj.SetActive(true);
+        
+        RenderSettings.skybox = null;
     }
     private void RestoreOriginalShader()
     {

@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75755c3b425a8f74d972d15066547f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skyboxMaterial: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
+  newskybox: {fileID: 2100000, guid: 4067de1a02072244798361060c5e7325, type: 2}
   transparency: 0.3
   targetMaterial: {fileID: 2100000, guid: c6d2b72de35fdc14db501f6a7e8b2f5e, type: 2}
 --- !u!1 &8713219294096719884
