@@ -192,7 +192,7 @@ public class MonsterController : MonoBehaviour
             {
                 Vector3 moveDir = direction.normalized;
                 transform.position += moveDir * directMoveSpeed * Time.deltaTime;
-                Debug.Log(moveDir * directMoveSpeed * Time.deltaTime);
+               // Debug.Log(moveDir * directMoveSpeed * Time.deltaTime);
 
                 Quaternion lookRot = Quaternion.LookRotation(moveDir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Time.deltaTime * 5f);
@@ -247,12 +247,10 @@ public class MonsterController : MonoBehaviour
                             {
                                 //±þ
                                 StartDirectMove(secondTargetB);
-                                gameManager.stage_count += 1;
                             }
                             else
                             {
                                 StartDirectMove(secondTargetA);
-                                gameManager.stage_count = 0;
                             }
                         }
                         else
@@ -260,12 +258,10 @@ public class MonsterController : MonoBehaviour
                             if (gameManager.is_success)
                             {
                                 StartDirectMove(secondTargetA);
-                                gameManager.stage_count += 1;
                             }
                             else
                             {
                                 StartDirectMove(secondTargetB);
-                                gameManager.stage_count = 0;
                             }
                         }
                     }

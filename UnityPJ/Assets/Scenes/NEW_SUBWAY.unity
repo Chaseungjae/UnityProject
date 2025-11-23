@@ -37121,7 +37121,7 @@ MonoBehaviour:
   - {fileID: 8705760365550643582, guid: 2c064ef1653014746b65b263e42a00f5, type: 3}
   - {fileID: 8705760365550643582, guid: 45a12d1877d596247b921fd0c96dc4c4, type: 3}
   - {fileID: 8705760365550643582, guid: 0de437ed65493be4b9282093541e36f6, type: 3}
-  - {fileID: 8705760365550643582, guid: b91b6102237ac594b84accabda4c6dfc, type: 3}
+  - {fileID: 8705760365550643582, guid: 22b5d0f3afb69e2428c69ec04b00ddfb, type: 3}
   - {fileID: 8705760365550643582, guid: c70350d7b7fd65f4d85c2f978a2cf2bd, type: 3}
   - {fileID: 8705760365550643582, guid: 5b920c415f94c3c46a8d27513625a281, type: 3}
   - {fileID: 8705760365550643582, guid: e75090fcb8f4b9243bba6102d962a223, type: 3}
@@ -37130,11 +37130,11 @@ MonoBehaviour:
   - {fileID: 8705760365550643582, guid: c9bc133bc2f02314baea5be33e95e186, type: 3}
   - {fileID: 8705760365550643582, guid: 7bb825e19218d804d94e609da93485c4, type: 3}
   - {fileID: 8705760365550643582, guid: 28a0833fb45b28644a17e9ddb9a3dd06, type: 3}
-  - {fileID: 8705760365550643582, guid: 67bc3a7cb3dfddb40bb06c393a9c934f, type: 3}
+  - {fileID: 8705760365550643582, guid: b91b6102237ac594b84accabda4c6dfc, type: 3}
   - {fileID: 8705760365550643582, guid: 496ea66387470144b8ebd8dc96b33492, type: 3}
   - {fileID: 8705760365550643582, guid: 83789ebf084201a4d86a0adca7e2d8cf, type: 3}
   - {fileID: 8705760365550643582, guid: 1118645efca8e16418a88db5697bfd0c, type: 3}
-  normal_stage: {fileID: 8705760365550643582, guid: dafa449df8b1b8341a8397a6922f209a, type: 3}
+  normal_stage: {fileID: 8705760365550643582, guid: 8ae78421eea41dc44898e74f841ab174, type: 3}
   playerSpawnPosition: {x: -0.6, y: 1.5, z: -1.5}
   stage_count: 0
   is_success: 0

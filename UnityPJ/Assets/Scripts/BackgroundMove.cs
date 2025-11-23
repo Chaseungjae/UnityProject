@@ -240,7 +240,7 @@ public class BackgroundMove : MonoBehaviour
     //리셋 함수 
     public void reset_background()
     {
-        Debug.Log("Resetting BackgroundMove state");
+        //Debug.Log("Resetting BackgroundMove state");
         StopAllCoroutines();
         // Subway 자체의 위치는 GameManager가 스폰 시점에 지정하므로 여기선 리셋 X
         gameObject.transform.position = original_tunnel_position2;
@@ -272,6 +272,5 @@ public class BackgroundMove : MonoBehaviour
             right_door_closed_pos[i] = door_right[i].transform.position;
         }
         announcement.clip = audioClips[game_manager.stage_count];
-        Debug.Log(game_manager.stage_count);
     }
 }

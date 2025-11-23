@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
             {
                 //몬스터 활성화 전 리셋
                 Debug.Log("YOU DIE!!!!");
+                stage_count = 0;
                 Monster.gameObject.SetActive(true);
                 cinemachineVirtualCamera.Priority = 1000;
                 player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
@@ -107,8 +108,8 @@ public class GameManager : MonoBehaviour
             else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
             {
                 Debug.Log("CLEAR!!");
+                stage_count = stage_count + 1;
                 Monster.gameObject.SetActive(true);
-                stage_count++;
                 cinemachineVirtualCamera.Priority = 1000;
                 player.transform.position = new Vector3(12.47f, 0.7604864f, -8.78f);
                 player_rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -126,9 +127,9 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("CLEAR!!");
                 is_subway = true;
-                stage_count++;
+                stage_count=stage_count+1;
                 Monster.gameObject.SetActive(true);
-                Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
+               // Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
                 FixedCamera_player.Priority = 1000;
                 player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
                 player_rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -141,8 +142,8 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log("YouDie");
                 is_subway = true;
+                stage_count = 0;
                 Monster.gameObject.SetActive(true);
-                Debug.Log("65465444444444565656565656565656565656565656565656565656565644444444444");
                 FixedCamera_player.Priority = 1000;
                 player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
                 player_rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -162,6 +163,7 @@ public class GameManager : MonoBehaviour
     void next_stage()
     {
         Debug.Log("next stage");
+        Debug.Log(stage_count);
         subway_in_die = false;
         // 모든 연출을 리셋
         Monster.gameObject.SetActive(false);
@@ -175,6 +177,7 @@ public class GameManager : MonoBehaviour
         float random = Random.value;
         if (random < 0.35f || is_first_load)
         {
+            Debug.Log("노말 35%");
             strange_situation = false;
             prefab_spawn = normal_stage;
         }
@@ -185,10 +188,11 @@ public class GameManager : MonoBehaviour
             int prefab_idx=-1;
             if (random < 0.4f) //발견쉬운거 40%
             {
+                Debug.Log("쉬운거 40%");
                 bool go = false;
                 while (!go) {
                     go = true;
-                    prefab_idx = Random.Range(0, 14);
+                    prefab_idx = Random.Range(0, 14); //0~13
                     for (int i = 0; i < stage_count; i++)
                     {
                         if (duplication[i] == prefab_idx) go = false; 
@@ -197,17 +201,19 @@ public class GameManager : MonoBehaviour
             }
             else //발견어려운거 60%
             {
+                Debug.Log("어려운거 60%");
                 bool go = false;
                 while (!go)
                 {
                     go = true;
-                    prefab_idx = Random.Range(13, strange_situation_array.Length);
+                    prefab_idx = Random.Range(14, strange_situation_array.Length); //14~
                     for (int i = 0; i < stage_count; i++)
                     {
                         if (duplication[i] == prefab_idx) go = false;
                     }
                 }
             }
+            Debug.Log("인덱스: "+prefab_idx);
             prefab_spawn = strange_situation_array[prefab_idx];
         }
         current_subway = Instantiate(prefab_spawn, new Vector3(0, 0, 0), prefab_spawn.transform.rotation);
@@ -215,9 +221,9 @@ public class GameManager : MonoBehaviour
         Background.door_left = new_subway.door_left;
         Background.door_right = new_subway.door_right;
         //변수 초기화 
-        stage_clear = false;
-        isStagetTransitioning = false;
-        is_success = false;
+        //stage_clear = false;
+        //isStagetTransitioning = false;
+        //is_success = false;
         is_subway = true;
         is_first_load = false; // 첫 로드 완료
         Background.reset_background(); // 새 지하철의 배경 리셋
@@ -230,8 +236,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         Debug.Log("페이드아웃");
         yield return CanvasM.FadeOut();
-        Station.text = "Station: "+ stage_count;
-        Station.gameObject.SetActive(true);
+        //Station.text = "Station: "+ stage_count;
+       // Station.gameObject.SetActive(true);
         yield return new WaitForSeconds(2.0f);
         next_stage();
         yield return new WaitForSeconds(2.0f);
@@ -250,7 +256,10 @@ public class GameManager : MonoBehaviour
         FixedCamera_player.Priority = 11;
 
         player_rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-
+        Background.is_door_closing = false;
+        stage_clear = false;
+        isStagetTransitioning = false;
+        is_success = false;
 
     }
     
