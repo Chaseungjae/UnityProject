@@ -5,6 +5,7 @@ using UnityEditor.Build.Content;
 
 public class subway_ksw_door_tril : MonoBehaviour
 {
+    public AudioSource door_sound;
     public GameObject[] door_left;
     public GameObject[] door_right;
     private Vector3[] left_door_closed_pos;  // ¿ÞÂÊ ¹®µéÀÇ ´ÝÈù À§Ä¡ ÀúÀå
@@ -23,6 +24,7 @@ public class subway_ksw_door_tril : MonoBehaviour
     public float maxShakeDuration = 2.0f;
 
     private bool isShaking = false;
+    private bool issound = false;
     void Start()
     {
         left_door_closed_pos = new Vector3[door_left.Length];
@@ -48,11 +50,14 @@ public class subway_ksw_door_tril : MonoBehaviour
         }
         else if (isShaking)
         {
+            if (!issound)  {  door_sound.Play(); issound = true; }
             Debug.Log("Èçµé");
             ApplyShakeEffect();
         }
         else
         {
+            door_sound.Stop();
+            issound = false; 
             ReturnDoorsToClosedPosition();
         }
     }
@@ -101,6 +106,7 @@ public class subway_ksw_door_tril : MonoBehaviour
     }
     void ReturnDoorsToClosedPosition()
     {
+
         for (int i = 0; i < door_left.Length; i++)
         {
             door_left[i].transform.position = left_door_closed_pos[i];
