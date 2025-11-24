@@ -216,7 +216,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("¿Œµ¶Ω∫: "+prefab_idx);
             prefab_spawn = strange_situation_array[prefab_idx];
         }
-        current_subway = Instantiate(prefab_spawn, new Vector3(0, 0, 0), prefab_spawn.transform.rotation);
+        current_subway = Instantiate(prefab_spawn, new Vector3(0, -0.2f, 0), prefab_spawn.transform.rotation);
         var new_subway = current_subway.GetComponent<Subway>();
         Background.door_left = new_subway.door_left;
         Background.door_right = new_subway.door_right;
@@ -255,7 +255,7 @@ public class GameManager : MonoBehaviour
         FixedCamera_player.transform.rotation = Quaternion.Euler(0, -180f, 0f);
         FixedCamera_player.Priority = 11;
 
-        player_rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        player_rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ| RigidbodyConstraints.FreezeRotationY| RigidbodyConstraints.FreezePositionY;
         Background.is_door_closing = false;
         stage_clear = false;
         isStagetTransitioning = false;
