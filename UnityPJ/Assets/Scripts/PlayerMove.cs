@@ -14,6 +14,8 @@ public class PlayerMove : MonoBehaviour
 
     public CinemachineVirtualCamera vcam;
 
+    public AudioSource step_sound;
+
     // 기본 퍼린 노이즈 컴포넌트
     private CinemachineBasicMultiChannelPerlin noise;
 
@@ -60,6 +62,19 @@ public class PlayerMove : MonoBehaviour
 
         noise.m_AmplitudeGain = Mathf.Lerp(0f, Mathf.Lerp(walkAmp, runAmp, t), t);
         noise.m_FrequencyGain = Mathf.Lerp(0f, Mathf.Lerp(walkFreq, runFreq, t), t);
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            if (!step_sound.isPlaying)
+            {
+                step_sound.Play();
+            }
+        }
+        else
+        {
+            step_sound.Pause();
+            //step_sound.Stop();
+        }
     }
 
     public void LockRotationAndStop()
