@@ -8,6 +8,7 @@ TagManager:
   - Tunnel_Lighted
   - Wall_Tunnel
   - Tunnel_End
+  - Clear_Cube
   layers:
   - Default
   - TransparentFX

@@ -50,6 +50,11 @@ public class GameManager : MonoBehaviour
     public CanvasM CanvasM;
     public TextMeshProUGUI Station;
 
+    public bool game_clear = false;
+    public CinemachineVirtualCamera camera_clear;
+    private int stage_clear_number = 9;
+
+
 
     private void Awake()
     {
@@ -63,7 +68,14 @@ public class GameManager : MonoBehaviour
             duplication[i] = -1;
         }
         player_rb = player.GetComponent<Rigidbody>();
-        next_stage();
+        if(stage_count>=stage_clear_number)
+        {
+            clear_stage();
+        }
+        else
+        {
+            next_stage();
+        }
     }
 
     void Update()
@@ -86,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (player.transform.position.z > 3.0f || player.transform.position.z < -3.0f)
         {
             // [수정] 이미 전환 중이면(stage_clear == true) 중복 실행 방지
-            if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
+            if (Background.is_door_closing == true && strange_situation == false && stage_clear == false && game_clear == false)
             {
                 //몬스터 활성화 전 리셋
                 Debug.Log("YOU DIE!!!!");
@@ -105,7 +117,7 @@ public class GameManager : MonoBehaviour
                 }
                 StartCoroutine(DeathAndResetRoutine(5f));
             }
-            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
+            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false&& game_clear == false)
             {
                 Debug.Log("CLEAR!!");
                 stage_count = stage_count + 1;
@@ -123,13 +135,13 @@ public class GameManager : MonoBehaviour
         else
         {
             // 이미 전환 중이면(stage_clear == true) 중복 실행 방지
-            if (Background.is_door_closing == true && strange_situation == false && stage_clear == false)
+            if (Background.is_door_closing == true && strange_situation == false && stage_clear == false&& game_clear == false)
             {
                 Debug.Log("CLEAR!!");
                 is_subway = true;
                 stage_count=stage_count+1;
-                Monster.gameObject.SetActive(true);
-               // Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
+                 Monster.gameObject.SetActive(true);
+                // Debug.Log("몬스터 생성하기!!!!!!!!!!!!!!!!!");
                 FixedCamera_player.Priority = 1000;
                 player.transform.position = new Vector3(1.0999f, 0.7604864f, -1.43f);
                 player_rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -138,7 +150,7 @@ public class GameManager : MonoBehaviour
                 is_success = true;
                 StartCoroutine(DeathAndResetRoutine(5f));
             }
-            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false)
+            else if (Background.is_door_closing == true && strange_situation == true && stage_clear == false&& game_clear == false)
             {
                 Debug.Log("YouDie");
                 is_subway = true;
@@ -239,7 +251,14 @@ public class GameManager : MonoBehaviour
         //Station.text = "Station: "+ stage_count;
        // Station.gameObject.SetActive(true);
         yield return new WaitForSeconds(2.0f);
-        next_stage();
+        if(stage_count>=stage_clear_number)
+        {
+            clear_stage();
+        }
+        else
+        {
+            next_stage();
+        }
         yield return new WaitForSeconds(2.0f);
         Station.gameObject.SetActive(false);
         Debug.Log("페이드인 시작");
@@ -280,5 +299,34 @@ public class GameManager : MonoBehaviour
             Debug.Log("삭제");
             //DeathAndResetRoutine(0.1f);
         }
+    }
+    void clear_stage()
+    {
+        Debug.Log("clear stage");
+        //camera_clear.Priority = 10000;
+        game_clear = true;
+        subway_in_die = false;
+        // 모든 연출을 리셋
+        Monster.gameObject.SetActive(false);
+        cinemachineVirtualCamera.Priority = 10;
+        if (!is_first_load && current_subway != null)
+        {
+            Destroy(current_subway);
+        }
+        // 스폰할 프리팹 결정 
+        GameObject prefab_spawn = normal_stage;
+
+        current_subway = Instantiate(prefab_spawn, new Vector3(0, -0.2f, 0), prefab_spawn.transform.rotation);
+        var new_subway = current_subway.GetComponent<Subway>();
+        Background.door_left = new_subway.door_left;
+        Background.door_right = new_subway.door_right;
+        //변수 초기화 
+        //stage_clear = false;
+        //isStagetTransitioning = false;
+        //is_success = false;
+        is_subway = true;
+        is_first_load = false; // 첫 로드 완료
+        Background.reset_background(); // 새 지하철의 배경 리셋
+        player.transform.position = playerSpawnPosition; // 플레이어 위치 리셋
     }
 }

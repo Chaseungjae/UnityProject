@@ -16,8 +16,9 @@ public class PlayerMove : MonoBehaviour
 
     public AudioSource step_sound;
 
-    // ê¸°ë³¸ í¼ë¦° ë…¸ì´ì¦ˆ ì»´í¬ë„ŒíŠ¸
+    // ê¸°ë³¸ ?¼ë¦? ?…¸?´ì¦? ì»´í¬?„Œ?Š¸
     private CinemachineBasicMultiChannelPerlin noise;
+    public ClearController clearplayer;
 
     [Header("Noise by Speed")]
     public float walkAmp = 0.0f;
@@ -40,7 +41,7 @@ public class PlayerMove : MonoBehaviour
     {
         noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
         if (noise == null)
-            Debug.LogError("VCamì— CinemachineBasicMultiChannelPerlin(Noise)ë¥¼ ì¶”ê°€í•˜ì„¸ìš”.");
+            Debug.LogError("VCam?— CinemachineBasicMultiChannelPerlin(Noise)ë¥? ì¶”ê???•˜?„¸?š”.");
     }
     void Update()
     {
@@ -81,5 +82,24 @@ public class PlayerMove : MonoBehaviour
     {
         isActive = false;
         transform.rotation = Quaternion.Euler(0f, 86.1f, 0f);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Clear_Cube"))
+        {
+            Debug.Log("2");
+            if (!clearplayer.sequenceStarted && GameManager.Instance.game_clear)
+            {
+                Debug.Log("3");
+                clearplayer.cam.Priority = 10000;
+                clearplayer.sequenceStarted = true;     // µü ÇÑ ¹ø¸¸ ½ÇÇà
+                StartCoroutine(clearplayer.MoveSequence());
+            }
+            if(GameManager.Instance.game_clear == true)
+            {
+                clearplayer.light_clear.SetActive(true);
+            }
+        }
     }
 }
