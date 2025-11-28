@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic; // List/Array 사용
 using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UIElements;
 using static System.Collections.Specialized.BitVector32;
 
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     public CinemachineVirtualCamera camera_clear;
     private int stage_clear_number = 9;
 
+    public GameObject PointLight;
 
 
     private void Awake()
@@ -248,8 +250,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         Debug.Log("페이드아웃");
         yield return CanvasM.FadeOut();
+        PointLight.SetActive(false);
         //Station.text = "Station: "+ stage_count;
-       // Station.gameObject.SetActive(true);
+        // Station.gameObject.SetActive(true);
         yield return new WaitForSeconds(2.0f);
         if(stage_count>=stage_clear_number)
         {

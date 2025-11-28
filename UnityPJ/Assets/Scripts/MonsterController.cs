@@ -62,6 +62,8 @@ public class MonsterController : MonoBehaviour
     // OnEnable용 가드
     private bool _initialized = false;
 
+    public GameObject PointLight;
+
     void Awake()
     {
         directMoveSpeed = 16f; // 직접 이동 속도 고정
@@ -81,6 +83,8 @@ public class MonsterController : MonoBehaviour
 
         if (baseLayerIndex != -1) animator.SetLayerWeight(baseLayerIndex, 1f);
         if (runLayerIndex != -1) animator.SetLayerWeight(runLayerIndex, 0f);
+
+        PointLight.SetActive(false);
     }
 
     void Start()
@@ -129,6 +133,7 @@ public class MonsterController : MonoBehaviour
         effect.SetActive(true);
         effect.transform.localPosition = Vector3.zero;
         StartCoroutine(DestroyEffectAfterSeconds(effect, 2f));
+        PointLight.SetActive(true);
     }
 
     private IEnumerator DestroyEffectAfterSeconds(GameObject effect, float seconds)
@@ -154,6 +159,10 @@ public class MonsterController : MonoBehaviour
             if (canvas != null) canvas.SetActive(true);
             monsterAudioSource.PlayOneShot(sfxClip, volume);
             spawnedMonster = false;
+            PointLight.SetActive(true);
+
+            PointLight.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 0.5f, player.transform.position.z);
+
         }
 
         // 카메라 연출
