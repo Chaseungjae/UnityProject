@@ -55,7 +55,17 @@ public class PlayerMove : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 move = (transform.forward * vertical * reversal_move  + transform.right * horizontal * reversal_move);
+        //Vector3 move = (transform.forward * vertical * reversal_move  + transform.right * horizontal * reversal_move);
+        //playerRB.MovePosition(transform.position + move * Speed * Time.deltaTime);
+
+        Vector3 forward = transform.forward;
+        Vector3 right = transform.right;
+        forward.y = 0f;
+        right.y = 0f;
+        forward.Normalize();
+        right.Normalize();
+
+        Vector3 move = (forward * vertical * reversal_move + right * horizontal * reversal_move);
         playerRB.MovePosition(transform.position + move * Speed * Time.deltaTime);
 
         float planarSpeed = new Vector3(playerRB.linearVelocity.x, 0, playerRB.linearVelocity.z).magnitude;
