@@ -3,10 +3,17 @@ using UnityEngine.AI;
 using System.Collections;
 using UnityEngine.Audio;
 using Cinemachine;
+using UnityEngine.SceneManagement;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class ClearController : MonoBehaviour
 {
     BackgroundMove background;
+    public SceneAsset sceneLoader;  // Inspector에서 이동할 씬 드롭
+    private string sceneName;
 
     [Header("Targets")]
     [SerializeField] Transform firstTarget;      // 1차 목적지
@@ -36,6 +43,8 @@ public class ClearController : MonoBehaviour
     public float idleShakeAmp = 0f;        // 멈췄을 때 흔들림 0
     public float idleShakeFreq = 0f;
 
+
+
     void Awake()
     {
         directMoveSpeed = 16f;
@@ -44,6 +53,13 @@ public class ClearController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         cam.transform.rotation = Quaternion.Euler(0, 0, 0);
         noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+        #if UNITY_EDITOR
+        if (sceneLoader != null)
+        {
+            string path = AssetDatabase.GetAssetPath(sceneLoader);
+            sceneName = System.IO.Path.GetFileNameWithoutExtension(path);
+        }
+    #endif
     }
 
     void Start()
@@ -174,6 +190,13 @@ public class ClearController : MonoBehaviour
 
         // 3 → thirdTarget 이동
         yield return SmoothMoveToTarget(thirdTarget);
+
+        yield return new WaitForSeconds(1f);
+
+        //크레딧 씬으로 전환
+        SceneManager.LoadScene(sceneName);
+
+        
     }
 
     
