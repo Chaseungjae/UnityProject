@@ -179,7 +179,7 @@ MonoBehaviour:
   m_text: The Next Stop
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
-  m_sharedMaterial: {fileID: 8283046789723598605, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
+  m_sharedMaterial: {fileID: 7967486529986211509, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 323396074}
   - component: {fileID: 323396073}
   - component: {fileID: 323396072}
+  - component: {fileID: 323396075}
   m_Layer: 5
   m_Name: SettingButton
   m_TagString: Untagged
@@ -590,7 +591,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 323396073}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 323396075}
+        m_TargetAssemblyTypeName: SettingButton, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &323396073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +642,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323396070}
   m_CullTransparentMesh: 1
+--- !u!114 &323396075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323396070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1e1d53702ff5a4e8384b623d4077c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneLoader: {fileID: 102900000, guid: 639836250be37d440905294289e6a0a3, type: 3}
 --- !u!1 &448672816
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +715,7 @@ MonoBehaviour:
   m_text: Setting
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
-  m_sharedMaterial: {fileID: 8283046789723598605, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
+  m_sharedMaterial: {fileID: 7967486529986211509, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1133,7 +1159,7 @@ MonoBehaviour:
   m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
-  m_sharedMaterial: {fileID: 8283046789723598605, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
+  m_sharedMaterial: {fileID: 7967486529986211509, guid: f70a229bfcbfcb64a81065f8c5284473, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

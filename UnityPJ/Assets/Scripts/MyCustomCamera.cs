@@ -1,4 +1,5 @@
 using UnityEngine;
+using Cinemachine;
 
 public class MyCustomCamera : MonoBehaviour
 {
@@ -7,11 +8,18 @@ public class MyCustomCamera : MonoBehaviour
     private float rotationX = 0f;
     private bool isActive = true;
     public float reversal_mouse = 1.0f;
+    public CinemachineVirtualCamera vcam;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        mouseSensitivity = PlayerPrefs.GetFloat("MouseSensitivity", 300f);
+        if (vcam != null)
+        {
+            var composer = vcam.GetCinemachineComponent<CinemachinePOV>();
+            composer.m_VerticalAxis.m_MaxSpeed = mouseSensitivity;
+        }
     }
 
     void LateUpdate() // ? 카메라 갱신은 LateUpdate로 (딜레이 방지)
@@ -40,4 +48,21 @@ public class MyCustomCamera : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    public void ApplySensitivity(float value)
+    {
+        mouseSensitivity = value;
+
+        // Cinemachine POV 적용
+        if (vcam != null)
+        {
+            var pov = vcam.GetCinemachineComponent<CinemachinePOV>();
+            if (pov != null)
+            {
+                pov.m_HorizontalAxis.m_MaxSpeed = value;
+                pov.m_VerticalAxis.m_MaxSpeed = value;
+            }
+        }
+    }
+
 }
