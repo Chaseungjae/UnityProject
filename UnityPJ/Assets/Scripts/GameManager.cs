@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.UIElements;
 using static System.Collections.Specialized.BitVector32;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -56,6 +57,8 @@ public class GameManager : MonoBehaviour
     private int stage_clear_number = 9;
 
     public GameObject PointLight;
+    public GameObject settingsPanel;
+    public bool isOpen = false;
 
 
     private void Awake()
@@ -84,6 +87,34 @@ public class GameManager : MonoBehaviour
     {
         UpdateTimer();
         fun_strange_situation_exit_or_stay(player);
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleSettings();
+        }
+    }
+    public void ToggleSettings()
+    {
+        isOpen = !isOpen;
+        settingsPanel.SetActive(isOpen);
+
+        if (isOpen)
+        {
+            // 메뉴 열릴 때
+            EventSystem.current.SetSelectedGameObject(null);
+            Time.timeScale = 0f; // 게임 일시정지
+            AudioListener.pause = true;
+            UnityEngine.Cursor.lockState = CursorLockMode.None;
+            UnityEngine.Cursor.visible = true;
+        }
+        else
+        {
+            // 메뉴 닫힐 때
+            EventSystem.current.SetSelectedGameObject(null);
+            Time.timeScale = 1f;
+            AudioListener.pause = false;
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            UnityEngine.Cursor.visible = false;
+        }
     }
     // 타이머 업데이트
     private void UpdateTimer()
