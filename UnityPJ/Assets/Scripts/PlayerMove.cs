@@ -98,10 +98,8 @@ public class PlayerMove : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Clear_Cube"))
         {
-            Debug.Log("2");
             if (!clearplayer.sequenceStarted && GameManager.Instance.game_clear)
             {
-                Debug.Log("3");
                 clearplayer.cam.Priority = 10000;
                 clearplayer.sequenceStarted = true;     // 딱 한 번만 실행
                 StartCoroutine(clearplayer.MoveSequence());

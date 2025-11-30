@@ -9,6 +9,8 @@ public class MyCustomCamera : MonoBehaviour
     private bool isActive = true;
     public float reversal_mouse = 1.0f;
     public CinemachineVirtualCamera vcam;
+    
+
 
     void Start()
     {

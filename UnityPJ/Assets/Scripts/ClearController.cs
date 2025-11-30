@@ -41,8 +41,8 @@ public class ClearController : MonoBehaviour
     public float moveShakeFreq = 2.0f;     // 이동 중 흔들림 Frequency
     public float idleShakeAmp = 0f;        // 멈췄을 때 흔들림 0
     public float idleShakeFreq = 0f;
-
-
+    public AudioSource step_sound;
+    private bool isWalking = false;
 
     void Awake()
     {
@@ -75,8 +75,10 @@ public class ClearController : MonoBehaviour
     private IEnumerator MoveToTarget(Transform target)
     {
         if (target == null) yield break;
+        // 걷기 시작
+        isWalking = true;
+        StartCoroutine(FootstepLoop());
 
-        //  이동 시작 → 흔들림 ON
         noise.m_AmplitudeGain = moveShakeAmp;
         noise.m_FrequencyGain = moveShakeFreq;
 
@@ -95,12 +97,13 @@ public class ClearController : MonoBehaviour
             yield return null;
         }
 
-        agent.isStopped = true;
+        // 걷기 종료
+        isWalking = false;
 
-        // ★ 도착 → 흔들림 OFF
         noise.m_AmplitudeGain = idleShakeAmp;
         noise.m_FrequencyGain = idleShakeFreq;
     }
+
 
 
 
@@ -169,6 +172,14 @@ public class ClearController : MonoBehaviour
 
         transform.position = target.position;
     }
+    private IEnumerator FootstepLoop()
+    {
+        while (isWalking)
+        {
+            step_sound.PlayOneShot(step_sound.clip);
+            yield return new WaitForSeconds(0.4f); // 발소리 간격 (조절 가능)
+        }
+    }
     public IEnumerator MoveSequence()
     {
         // 회전 → secondTarget 방향
@@ -183,7 +194,7 @@ public class ClearController : MonoBehaviour
         // 3 → thirdTarget 이동
         yield return SmoothMoveToTarget(thirdTarget);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         //크레딧 씬으로 전환
         SceneManager.LoadScene(sceneName);
