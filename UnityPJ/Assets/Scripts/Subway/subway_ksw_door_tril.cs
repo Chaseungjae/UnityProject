@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 using System.Collections;
-using UnityEditor.Build.Content;
 
 public class subway_ksw_door_tril : MonoBehaviour
 {

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\subway\\subway_ksw_door_tril.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\subway\\subway_ksw_door_tril.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|c:\\users\\ksw\\documents\\unityproject\\unitypj\\assets\\scripts\\subway\\subway_ksw_door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\subway\\subway_ksw_door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\startscene\\settingtostart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startscene\\settingtostart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D47B624-6B20-4158-3B1D-A5C67B0E3B6B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +62,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "subway_ksw_door_tril.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\subway_ksw_door_tril.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Subway\\subway_ksw_door_tril.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\subway_ksw_door_tril.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Subway\\subway_ksw_door_tril.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T08:25:33.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "subway_ksw_door.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\subway_ksw_door.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Subway\\subway_ksw_door.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\subway_ksw_door.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Subway\\subway_ksw_door.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T08:25:24.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SettingToStart.cs",
+              "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\StartScene\\SettingToStart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StartScene\\SettingToStart.cs",
+              "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\StartScene\\SettingToStart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StartScene\\SettingToStart.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T08:24:59.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Meterials_Scripts.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\Meterials_Scripts.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Subway\\Meterials_Scripts.cs",
@@ -61,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClearController.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\ClearController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ClearController.cs",
@@ -73,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "subway_ksw_light.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\Subway\\subway_ksw_light.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Subway\\subway_ksw_light.cs",
@@ -85,20 +136,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMove.cs",
               "ToolTip": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\PlayerMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerMove.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAA9wEMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAowEMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T03:09:30.832Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T03:09:30.832Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "BackgroundMove.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\BackgroundMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BackgroundMove.cs",
@@ -110,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MonsterController.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\MonsterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MonsterController.cs",
@@ -122,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\KSW\\Documents\\UnityProject\\UnityPJ\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
