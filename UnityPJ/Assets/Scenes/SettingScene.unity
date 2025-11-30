@@ -1188,6 +1188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 102900000, guid: def6932d4ed78464b8872f1de1eabf6e, type: 3}
+  sceneName: StartScene
 --- !u!1 &935624113
 GameObject:
   m_ObjectHideFlags: 0

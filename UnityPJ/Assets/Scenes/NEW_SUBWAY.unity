@@ -68152,7 +68152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f309d9bb543fabe4a9ecc1c8203fdc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneLoader: {fileID: 102900000, guid: da03d355f36540e48b029ef542407159, type: 3}
+  sceneName: Credit
   firstTarget: {fileID: 576554249}
   secondTarget: {fileID: 473514787}
   thirdTarget: {fileID: 2079468415}

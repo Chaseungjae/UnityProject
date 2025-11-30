@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 102900000, guid: b96957e020767804487e7ad62cec4485, type: 3}
+  sceneName: NEW_SUBWAY
 --- !u!1 &250434106
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneLoader: {fileID: 102900000, guid: 639836250be37d440905294289e6a0a3, type: 3}
+  sceneName: SettingScene
 --- !u!1 &448672816
 GameObject:
   m_ObjectHideFlags: 0

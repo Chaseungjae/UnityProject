@@ -5,17 +5,14 @@ using UnityEngine.Audio;
 using Cinemachine;
 using UnityEngine.SceneManagement;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+
 
 public class ClearController : MonoBehaviour
 {
     BackgroundMove background;
-#if UNITY_EDITOR
-    public SceneAsset sceneLoader;
-#endif  // Inspector에서 이동할 씬 드롭
-    private string sceneName;
+
+    [SerializeField] 
+    private string sceneName = "Credit"; // 빌드용 이름 저장
 
     [Header("Targets")]
     [SerializeField] Transform firstTarget;      // 1차 목적지
@@ -55,13 +52,6 @@ public class ClearController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         cam.transform.rotation = Quaternion.Euler(0, 0, 0);
         noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-#if UNITY_EDITOR
-        if (sceneLoader != null)
-        {
-            string path = AssetDatabase.GetAssetPath(sceneLoader);
-            sceneName = System.IO.Path.GetFileNameWithoutExtension(path);
-        }
-#endif
     }
 
     void Start()
