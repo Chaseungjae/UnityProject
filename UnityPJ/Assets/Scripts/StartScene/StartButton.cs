@@ -7,7 +7,9 @@ using UnityEditor;
 
 public class StartButton : MonoBehaviour
 {
+#if UNITY_EDITOR
     public SceneAsset sceneLoader;  // Inspector에서 이동할 씬 드롭
+#endif
     private string sceneName;
     void Awake()
     {

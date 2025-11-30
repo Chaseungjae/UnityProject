@@ -12,7 +12,9 @@ using UnityEditor;
 public class ClearController : MonoBehaviour
 {
     BackgroundMove background;
-    public SceneAsset sceneLoader;  // Inspector에서 이동할 씬 드롭
+#if UNITY_EDITOR
+    public SceneAsset sceneLoader;
+#endif  // Inspector에서 이동할 씬 드롭
     private string sceneName;
 
     [Header("Targets")]
@@ -53,13 +55,13 @@ public class ClearController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         cam.transform.rotation = Quaternion.Euler(0, 0, 0);
         noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (sceneLoader != null)
         {
             string path = AssetDatabase.GetAssetPath(sceneLoader);
             sceneName = System.IO.Path.GetFileNameWithoutExtension(path);
         }
-    #endif
+#endif
     }
 
     void Start()

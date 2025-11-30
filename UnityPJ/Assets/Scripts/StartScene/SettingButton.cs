@@ -8,7 +8,9 @@ using UnityEditor;
 public class SettingButton : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+#if UNITY_EDITOR
     public SceneAsset sceneLoader;  // Inspector에서 이동할 씬 드롭
+#endif
     private string sceneName;
     void Awake()
     {

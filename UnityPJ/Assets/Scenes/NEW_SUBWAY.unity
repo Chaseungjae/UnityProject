@@ -38271,7 +38271,7 @@ MonoBehaviour:
   is_stop: 0
   CanvasM: {fileID: 1813927570}
   Station: {fileID: 678022311}
-  game_clear: 1
+  game_clear: 0
   camera_clear: {fileID: 85950892}
   PointLight: {fileID: 1541599624}
   settingsPanel: {fileID: 1641170374}
