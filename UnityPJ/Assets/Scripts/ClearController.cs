@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class ClearController : MonoBehaviour
 {
-    BackgroundMove background;
+    public Fadein Panal;
 
     [SerializeField] 
     private string sceneName = "Credit"; // 빌드용 이름 저장
@@ -48,7 +48,6 @@ public class ClearController : MonoBehaviour
     {
         directMoveSpeed = 16f;
         agent = GetComponent<NavMeshAgent>();
-        background = FindObjectOfType<BackgroundMove>();
         transform.rotation = Quaternion.Euler(0, 0, 0);
         cam.transform.rotation = Quaternion.Euler(0, 0, 0);
         noise = cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
@@ -197,7 +196,12 @@ public class ClearController : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         //크레딧 씬으로 전환
-        SceneManager.LoadScene(sceneName);
+        Panal.RegisterCallback(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+        });
+
+        Panal.FadeOut();
 
         
     }

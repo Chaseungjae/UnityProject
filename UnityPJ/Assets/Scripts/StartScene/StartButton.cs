@@ -1,16 +1,20 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-
 public class StartButton : MonoBehaviour
 {
-
-    [SerializeField] 
-    private string sceneName = "NEW_SUBWAY"; // 빌드용 이름 저장
+    public Fadein Panal;
+    [SerializeField]
+    private string sceneName = "NEW_SUBWAY";
 
     public void OnButtonClick()
     {
-        SceneManager.LoadScene(sceneName);
+        // 페이드 아웃이 끝난 후 실행될 콜백 등록
+        Panal.RegisterCallback(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+        });
+
+        Panal.FadeOut();  // 페이드 시작
     }
 }
