@@ -38367,7 +38367,7 @@ MonoBehaviour:
   - {fileID: 8705760365550643582, guid: 1118645efca8e16418a88db5697bfd0c, type: 3}
   normal_stage: {fileID: 8705760365550643582, guid: 8ae78421eea41dc44898e74f841ab174, type: 3}
   playerSpawnPosition: {x: -0.6, y: 1.6, z: -1.5}
-  stage_count: 9
+  stage_count: 0
   is_success: 0
   subway_in_die: 0
   is_subway: 1
