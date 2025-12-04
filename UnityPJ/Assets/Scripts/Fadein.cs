@@ -37,6 +37,8 @@ public class Fadein : MonoBehaviour
         onCompleteCallback?.Invoke();
     }
 
+    
+
     public void RegisterCallback(Action callback)
     {
         onCompleteCallback = callback;

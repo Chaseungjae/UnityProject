@@ -49,4 +49,12 @@ public class CanvasM : MonoBehaviour
         fadeImage.color = color;
         fadeImage.gameObject.SetActive(false); // 끝나면 비활성화
     }
+
+    public void set_black()
+    {
+        Color color = fadeImage.color;
+        color.a = 1f;
+        fadeImage.color = color;
+    }
+
 }

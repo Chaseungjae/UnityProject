@@ -68,6 +68,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(startfadein());
+
+
         for (int i = 0; i < 10; i++)
         {
             duplication[i] = -1;
@@ -273,6 +276,15 @@ public class GameManager : MonoBehaviour
         is_first_load = false; // 첫 로드 완료
         Background.reset_background(); // 새 지하철의 배경 리셋
         player.transform.position = playerSpawnPosition; // 플레이어 위치 리셋
+    }
+
+    IEnumerator startfadein()
+    {
+        Debug.Log("start fade in");
+        CanvasM.fadeImage.gameObject.SetActive(true);
+        CanvasM.set_black();
+        yield return new WaitForSeconds(1f);
+        yield return CanvasM.FadeIn();
     }
 
     IEnumerator DeathAndResetRoutine(float delay)
