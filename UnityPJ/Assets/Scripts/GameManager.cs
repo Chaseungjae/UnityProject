@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public GameObject Monster; // 플레이어한테 다가오는놈
     public MonsterController monsterController;
 
+    public GameObject tutorial;
+
     public PlayerMove playerControoler;
     //public MyCustomCamera CameraControoler;
     private bool isStagetTransitioning = false; // 스테이지 전환 중복 방지
@@ -90,9 +92,14 @@ public class GameManager : MonoBehaviour
     {
         UpdateTimer();
         fun_strange_situation_exit_or_stay(player);
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && tutorial.activeInHierarchy == false)
         {
             ToggleSettings();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) && tutorial.activeInHierarchy == true)
+        {
+            tutorial.SetActive(false);
         }
     }
     public void ToggleSettings()
