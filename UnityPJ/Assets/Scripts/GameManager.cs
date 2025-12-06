@@ -292,6 +292,7 @@ public class GameManager : MonoBehaviour
         CanvasM.set_black();
         yield return new WaitForSeconds(1f);
         yield return CanvasM.FadeIn();
+        tutorial.SetActive(true);
     }
 
     IEnumerator DeathAndResetRoutine(float delay)
