@@ -35,7 +35,7 @@ public class BackgroundMove : MonoBehaviour
     public bool is_door_closing = true; //문 닫힘 끝났는지 
 
     //타이머 
-    private float move_timer = 10.0f; //터널 반복 시간
+    private float move_timer = 30.0f; //터널 반복 시간
     private float stop_timer = 12.0f; //역 정차 시간 +2초 해줘야함 
 
     //지하철 다시 출발할지 말지 플레이어 내리는지 판별
@@ -251,7 +251,7 @@ public class BackgroundMove : MonoBehaviour
         velocity = 0.0f;
         is_end = false;
         // 타이머 리셋
-        move_timer = 10.0f;
+        move_timer = 30.0f;
         stop_timer = 12.0f;
         // 상태 변수 리셋
         is_door_open = false;

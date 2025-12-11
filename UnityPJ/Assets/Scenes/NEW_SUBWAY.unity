@@ -4361,7 +4361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a82d371c09ca14d98acb53a5a48525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1.01
+  Speed: 1.2
   reversal_move: 1
   vcam: {fileID: 1728675351}
   step_sound: {fileID: 155297664}
